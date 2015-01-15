@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 6. Quadratic Equation
 
 //    -Write a program that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots).
@@ -13,6 +12,9 @@ namespace _06.QuadraticEquation
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                        CultureInfo.InvariantCulture;
+
             Console.Write("a: ");
             string inputA = Console.ReadLine();
             Console.Write("b: ");

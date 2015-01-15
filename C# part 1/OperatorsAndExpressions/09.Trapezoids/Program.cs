@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 9. Trapezoids
 
 //    -Write an expression that calculates trapezoid's area by given sides a and b and height h.
@@ -13,6 +12,9 @@ namespace _09.Trapezoids
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentCulture =
+                                 CultureInfo.InvariantCulture;
+
             Console.Write("Enter side a: ");
             string inputA = Console.ReadLine();
             Console.Write("Enter side b: ");

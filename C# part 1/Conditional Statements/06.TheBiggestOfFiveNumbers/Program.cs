@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 /*
  Problem 6. The Biggest of Five Numbers
 
@@ -11,6 +13,9 @@ namespace _06.TheBiggestOfFiveNumbers
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                       CultureInfo.InvariantCulture;
+
             Console.Write("First number: ");
             string inputFirstNumber = Console.ReadLine();
             Console.Write("Second number: ");

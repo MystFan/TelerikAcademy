@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 //Problem 13. Check a Bit at Given Position
 
@@ -12,7 +8,7 @@ namespace _13.CheckBitGivenPosition
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.Write("Number: ");
             string inputNumber = Console.ReadLine();

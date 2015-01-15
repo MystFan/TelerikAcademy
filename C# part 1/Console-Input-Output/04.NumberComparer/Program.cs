@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 4. Number Comparer
 
 //    -Write a program that gets two numbers from the console and prints the greater of them.
@@ -14,6 +13,9 @@ namespace _04.NumberComparer
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                      CultureInfo.InvariantCulture;
+
             Console.Write("First number: ");
             string inputFirstNumber = Console.ReadLine();
             Console.Write("Second number: ");

@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 2. Gravitation on the Moon
 
 //  -The gravitational field of the Moon is approximately 17% of that on the Earth.
@@ -14,6 +13,9 @@ namespace _02.GravitationOnTheMoon
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentCulture =
+                                 CultureInfo.InvariantCulture;
+
             string input = Console.ReadLine();
 
             double weight;

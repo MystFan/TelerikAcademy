@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 //Problem 11. Bitwise: Extract Bit #3
 
@@ -14,7 +10,7 @@ namespace _11.ExtractBit3
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.Write("Number: ");
             string input = Console.ReadLine();

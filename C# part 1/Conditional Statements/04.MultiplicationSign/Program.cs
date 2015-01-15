@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 //Problem 4. Multiplication Sign
 
 //    -Write a program that shows the sign (+, - or 0) of the product of three real numbers, without calculating it.
@@ -10,6 +12,9 @@ namespace _04.MultiplicationSign
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                       CultureInfo.InvariantCulture;
+
             Console.Write("First number: ");
             string inputFirstNumber = Console.ReadLine();
             Console.Write("Second number: ");

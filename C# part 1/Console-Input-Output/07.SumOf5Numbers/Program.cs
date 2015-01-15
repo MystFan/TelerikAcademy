@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 7. Sum of 5 Numbers
 
 //    -Write a program that enters 5 numbers (given in a single line, separated by a space), calculates and prints their sum.
@@ -13,6 +12,9 @@ namespace _07.SumOf5Numbers
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                        CultureInfo.InvariantCulture;
+
             Console.Write("Enter the numbers separated by an empty space: ");
             string inputNumbers = Console.ReadLine();
 
@@ -32,7 +34,6 @@ namespace _07.SumOf5Numbers
                 }
 			}
             Console.WriteLine("Sum: {0}", sum);
-
         }
     }
 }

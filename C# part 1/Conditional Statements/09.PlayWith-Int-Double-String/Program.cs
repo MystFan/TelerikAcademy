@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 /*
  Problem 9. Play with Int, Double and String
 
@@ -13,6 +15,9 @@ namespace _09.PlayWith_Int_Double_String
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentCulture =
+                                           CultureInfo.InvariantCulture;
+
             Console.WriteLine("Please choose a type:");
             Console.WriteLine("1 --> int");
             Console.WriteLine("2 --> double");

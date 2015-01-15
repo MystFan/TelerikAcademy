@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
 //Problem 1. Sum of 3 Numbers
 
 //    -Write a program that reads 3 real numbers from the console and prints their sum.
@@ -13,6 +11,9 @@ namespace _01.SumOf3Numbers
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                     CultureInfo.InvariantCulture;
+
             Console.Write("Enter first number: ");
             string inputFirstNumber = Console.ReadLine();
             Console.Write("Enter second number: ");

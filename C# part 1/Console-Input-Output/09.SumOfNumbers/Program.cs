@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 9. Sum of n Numbers
 
 //    -Write a program that enters a number n and after that enters more n numbers and calculates and prints their sum. Note: You may need to use a for-loop.
@@ -13,6 +12,9 @@ namespace _09.SumOfNumbers
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                 CultureInfo.InvariantCulture;
+            Console.Write("n = ");
             string input = Console.ReadLine();
 
             double n;

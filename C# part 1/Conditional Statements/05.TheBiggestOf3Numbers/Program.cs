@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 
 /*
  Problem 5. The Biggest of 3 Numbers
@@ -12,6 +14,9 @@ namespace _05.TheBiggestOf3Numbers
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentCulture =
+                                   CultureInfo.InvariantCulture;
+
             Console.Write("First number: ");
             string inputFirstNumber = Console.ReadLine();
             Console.Write("Second number: ");

@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 3. Circle Perimeter and Area
 
 //    -Write a program that reads the radius r of a circle and prints its perimeter and area formatted with 2 digits after the decimal point.
@@ -13,6 +12,9 @@ namespace _03.CirclePerimeterAndArea
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                 CultureInfo.InvariantCulture;
+
             Console.Write("Radius: ");
             string inputRadius = Console.ReadLine();
 

@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 5. Formatting Numbers
 
 //    -Write a program that reads 3 numbers:
@@ -21,6 +20,9 @@ namespace _05.FormattingNumbers
     {
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture =
+                                       CultureInfo.InvariantCulture;
+
             Console.Write("First number: ");
             string inputFirstNumber = Console.ReadLine();
             Console.Write("Second number: ");

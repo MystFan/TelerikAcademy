@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 /*
  Problem 7. Sort 3 Numbers with Nested Ifs
 
@@ -13,6 +15,9 @@ namespace _07.Sort3Numbers
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentCulture =
+                                       CultureInfo.InvariantCulture;
+
             Console.Write("First number: ");
             string inputFirstNumber = Console.ReadLine();
             Console.Write("Second number: ");

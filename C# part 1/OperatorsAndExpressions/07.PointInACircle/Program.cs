@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.Threading;
+
 //Problem 7. Point in a Circle
 
 //    -Write an expression that checks if given point (x, y) is inside a circle K({0, 0}, 2).
@@ -13,6 +12,9 @@ namespace _07.PointInACircle
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentCulture =
+                                 CultureInfo.InvariantCulture;
+
             string inputX = Console.ReadLine();
             string inputY = Console.ReadLine();
             double x;

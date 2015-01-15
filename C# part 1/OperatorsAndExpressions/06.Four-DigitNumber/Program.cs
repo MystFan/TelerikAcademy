@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 //Problem 6. Four-Digit Number
 
 //    Write a program that takes as input a four-digit number in format abcd (e.g. 2011) and performs the following:

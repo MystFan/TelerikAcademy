@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+ 
 //Problem 14. Modify a Bit at Given Position
 
  //  - We are given an integer number n, a bit value v (v=0 or 1) and a position p.
@@ -12,7 +9,7 @@ namespace _14.ModifyBitGivenPosition
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.Write("Number: ");
             string inputNumber = Console.ReadLine();

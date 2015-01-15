@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+/*
+ Problem 8. Isosceles Triangle
 
+    Write a program that prints an isosceles triangle of 9 copyright symbols ©, something like this:
+ */
 namespace _08.IsoscelesTriangle
 {
     class Program

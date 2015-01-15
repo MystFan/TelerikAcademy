@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 //Problem 2. Print Company Information
 
 //    -A company has name, address, phone number, fax number, web site and manager. The manager has first name, last name, age and a phone number.
