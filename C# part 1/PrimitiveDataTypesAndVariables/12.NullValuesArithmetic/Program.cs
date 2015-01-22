@@ -14,8 +14,8 @@ namespace _12.NullValuesArithmetic
     {
         static void Main(string[] args)
         {
-            int number = null;
-            double num = null;
+            int? number = null;
+            double? num = null;
         }
     }
 }
