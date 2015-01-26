@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripleRotationOfDigits", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadronacciRectangle", "QuadronacciRectangle\QuadronacciRectangle.csproj", "{ADFD4B83-7E7F-4421-AC23-4C33D79628BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngryBits", "AngryBits\AngryBits.csproj", "{B7942489-8F02-4680-9B1D-C778CEE0CD72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ADFD4B83-7E7F-4421-AC23-4C33D79628BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADFD4B83-7E7F-4421-AC23-4C33D79628BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADFD4B83-7E7F-4421-AC23-4C33D79628BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7942489-8F02-4680-9B1D-C778CEE0CD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7942489-8F02-4680-9B1D-C778CEE0CD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7942489-8F02-4680-9B1D-C778CEE0CD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7942489-8F02-4680-9B1D-C778CEE0CD72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
