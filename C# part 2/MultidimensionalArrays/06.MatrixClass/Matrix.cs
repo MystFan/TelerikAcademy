@@ -16,8 +16,8 @@ namespace _06.MatrixClass
             matrix = new int[this.Rows, this.Cols];
         }
 
-        public int Rows { get; set; }
-        public int Cols { get; set; }
+        public int Rows { get; private set; }
+        public int Cols { get; private set; }
         public int RowSize
         {
             get
@@ -34,22 +34,22 @@ namespace _06.MatrixClass
             }
         }
 
-        public int this[int i,int j]
+        public int this[int i, int j]
         {
             get
             {
-                return this.matrix[i,j];
+                return this.matrix[i, j];
             }
             set
             {
-                matrix[i,j] = value;
+                matrix[i, j] = value;
             }
         }
         public static Matrix operator +(Matrix firstMatrix, Matrix secondMatrix)
         {
             int firstMatrixSize = firstMatrix.Cols * firstMatrix.Rows;
             int secondMatrixSize = secondMatrix.Cols * secondMatrix.Rows;
-            Matrix resultMatrix = new Matrix(firstMatrix.Rows,firstMatrix.Cols);
+            Matrix resultMatrix = new Matrix(firstMatrix.Rows, firstMatrix.Cols);
             if (firstMatrixSize != secondMatrixSize)
             {
                 throw new ArgumentException("Matrices are trying to adding have a different size");
@@ -58,7 +58,7 @@ namespace _06.MatrixClass
             {
                 for (int j = 0; j < firstMatrix.Cols; j++)
                 {
-                    resultMatrix[i,j] = firstMatrix[i, j] + secondMatrix[i, j];
+                    resultMatrix[i, j] = firstMatrix[i, j] + secondMatrix[i, j];
                 }
             }
             return resultMatrix;
@@ -109,7 +109,7 @@ namespace _06.MatrixClass
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    sb.Append(matrix[i,j] + " ");
+                    sb.Append(matrix[i, j] + " ");
                 }
                 if (i < matrix.GetLength(0) - 1)
                 {
