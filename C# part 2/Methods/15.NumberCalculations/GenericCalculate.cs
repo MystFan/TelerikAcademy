@@ -39,5 +39,35 @@ namespace _15.NumberCalculations
             return min;
         }
 
+        public T CalculateAverage<T>(params T[] numbers) where T : IComparable<T>
+        {
+            T sum = default(T);
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                sum += (dynamic)numbers[i];
+            }
+            T average = sum / (dynamic)numbers.Length;
+            return average;
+        }
+
+        public T CalculateProduct<T>(params T[] productNumbers) where T : IComparable<T>
+        {
+            T product = default(T);
+            for (int row = 0; row < productNumbers.Length; row++)
+            {
+                product *= (dynamic)productNumbers[row];
+            }
+            return product;
+        }
+
+        public T CalculateSum<T>(params T[] numbers) where T : IComparable<T>
+        {
+            T sum = default(T);
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                sum += (dynamic)numbers[i];
+            }
+            return sum;
+        }
     }
 }
