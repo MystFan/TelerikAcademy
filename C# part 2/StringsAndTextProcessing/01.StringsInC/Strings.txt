@@ -1,0 +1,16 @@
+﻿A string is an object of type String whose value is text. Internally, the text is stored as a sequential read-only collection of Char objects. 
+There is no null-terminating character at the end of a C# string; therefore a C# string can contain any number of embedded null characters ('\0'). 
+The Length property of a string represents the number of Char objects it contains, not the number of Unicode characters.
+
+Most important methods
+string.Compare();
+string.Equals();
+string.IndexOf();
+string.LastIndexOf();
+string.Substring();
+string.Split();
+string.Replace();
+string.Remove();
+string.ToLower();
+string.ToUpper();
+String.Format(); 
