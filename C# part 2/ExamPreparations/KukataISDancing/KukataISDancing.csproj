@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CDB831D9-2DF9-48E9-AD35-711CCA2DBA42}</ProjectGuid>
+    <ProjectGuid>{26C89DEA-6332-4514-9162-F59655E30D9A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Digits</RootNamespace>
-    <AssemblyName>Digits</AssemblyName>
+    <RootNamespace>KukataISDancing</RootNamespace>
+    <AssemblyName>KukataISDancing</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Digits.cs" />
+    <Compile Include="KukataISDancing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
