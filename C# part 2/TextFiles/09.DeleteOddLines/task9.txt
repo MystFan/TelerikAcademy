@@ -1,0 +1,12 @@
+1.Lorem ipsum is a pseudo-Latin text used in web design, typography, 
+2.layout, and printing in place of English to emphasise design elements over content. 
+3.It's also called placeholder (or filler) text. 
+4.It's a convenient tool for mock-ups. 
+5.It helps to outline the visual elements of a document or presentation, eg typography, font, or layout.
+6.Lorem ipsum is mostly a part of a Latin text by the classical author and philospher Cicero. 
+7.Its words and letters have been changed by addition or removal, so to deliberately render its content nonsensical; 
+8.it's not genuine, correct, or comprehensible Latin anymore. 
+9.While lorem ipsum's still resembles classical Latin, it actually has no meaning whatsoever. 
+10.As Cicero's text doesn't contain the letters K, W, or Z, alien to latin, 
+11.these, and others are often inserted randomly to mimic the typographic appearence of European languages, 
+12.as are digraphs not to be found in the original.

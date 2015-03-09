@@ -1,0 +1,19 @@
+﻿1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+2 sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+3 magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+4 quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+5 ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+6 dolor in hendrerit in vulputate velit esse molestie consequat,
+7 vel illum dolore eu feugiat nulla facilisis at vero eros et 
+8 accumsan et iusto odio dignissim qui blandit praesent luptatum
+9 zzril delenit augue duis dolore te feugait nulla facilisi. 
+10 Nam liber tempor cum soluta nobis eleifend option congue nihil
+11 imperdiet doming id quod mazim placerat facer possim assum.
+12 Typi non habent claritatem insitam; est usus legentis in iis
+13 qui facit eorum claritatem. Investigationes demonstraverunt 
+14 lectores legere me lius quod ii legunt saepius. Claritas est
+15 etiam processus dynamicus, qui sequitur mutationem consuetudium
+16 lectorum. Mirum est notare quam littera gothica, quam nunc 
+17 putamus parum claram, anteposuerit litterarum formas humanitatis
+18 per seacula quarta decima et quinta decima. Eodem modo typi, 
+19 qui nunc nobis videntur parum clari, fiant sollemnes in futurum.

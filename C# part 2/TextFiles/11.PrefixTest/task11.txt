@@ -1,0 +1,11 @@
+﻿Lorem ipsum is a testpseudo-Latin testpseudo-Latin testpseudo-Latin text used in web design, typography, 
+layout, and printing in testplace of English to emphasise design elements over content. 
+It's also called placeholder (or filler) text. 
+It's a convenient testtool for mock-ups. 
+It helps to testoutline the visual elements of a document or presentation, eg typography, font, or layout.
+Lorem ipsum is testmostly a part of a Latin text by the classical author and philospher Cicero. 
+Its words testand letters have been changed by addition or removal, so to deliberately render its content nonsensical; 
+it's not genuine, testcorrect, or comprehensible Latin anymore. 
+While lorem testipsum's still resembles classical Latin, it actually has no meaning whatsoever. 
+these, and testothers are often inserted randomly to mimic the typographic appearence of European languages, 
+as are digraphs not to be testfound in the original.
