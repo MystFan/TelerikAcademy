@@ -6,16 +6,18 @@
 namespace _05._64BitArray
 {
     using System;
+    using System.Text;
     class BitArray
     {
         static void Main()
         {
+
             BitArray64 bits = new BitArray64(123456789999);
-            Console.WriteLine(string.Join(" ",bits));
+            Console.WriteLine(string.Join("",bits));
             Console.WriteLine("Hash Code: {0}", bits.GetHashCode());
 
             BitArray64 anotherBits = new BitArray64(123456789999);
-            Console.WriteLine(string.Join(" ", anotherBits));
+            Console.WriteLine(string.Join("", anotherBits));
             Console.WriteLine("Hash Code: {0}", anotherBits.GetHashCode());
 
             Console.WriteLine("Equals: {0}", bits.Equals(anotherBits));
@@ -36,5 +38,7 @@ namespace _05._64BitArray
             }
             Console.WriteLine();
         }
+
+       
     }
 }

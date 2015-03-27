@@ -5,11 +5,13 @@ namespace _05._64BitArray
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
     public class BitArray64 : IEnumerable<int>
     {
         public BitArray64(ulong number)
         {
-            this.Bits = ExtractBits(number);
+            string binaryString = DecimalToBinary(number);
+            this.Bits = ToBitArray(binaryString);
         }
         public int[] Bits { get; private set; }
 
@@ -88,22 +90,39 @@ namespace _05._64BitArray
 
             return false;
         }
-        private int[] ExtractBits(ulong number)
+        private int[] ToBitArray(string numberString)
         {
-            List<int> extractedBits = new List<int>();
-            byte[] byteArray = BitConverter.GetBytes(number);
-
-            for (int i = 0; i < byteArray.Length; i++)
-            {
-                int[] bits = Convert.ToString(byteArray[i], 2).PadLeft(8, '0')
-                   .Select(c => int.Parse(c.ToString()))
-                   .ToArray();
-                for (int j = 0; j < bits.Length; j++)
-                {
-                    extractedBits.Add(bits[j]);
-                }
-            }
-            return extractedBits.ToArray();
+            int[] result = numberString.ToCharArray().Select(b => int.Parse(b.ToString())).ToArray();
+            return result;
         }
+
+        private string DecimalToBinary(ulong number)
+        {
+            ulong num;
+            StringBuilder sb = new StringBuilder();
+            string str = String.Empty;
+            while (number != 0)
+            {
+                num = number % 2;
+                if (num != 0)
+                {
+                    sb.Append(1);
+                }
+                if (num == 0)
+                {
+                    sb.Append(0);
+                }
+                number = number / 2;
+            }
+
+            string reverse = sb.ToString();
+            sb.Clear();
+            for (int i = reverse.Length - 1; i >= 0; i--)
+            {
+                sb.Append(reverse[i]);
+            }
+            return sb.ToString().PadLeft(64, '0');
+        }
+
     }
 }
