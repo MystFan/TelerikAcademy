@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration form</title>
+    <style>
+        table, td, th{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        table tr:last-child{
+            background-color:aqua;
+            text-align:center;
+        }
+        input, textarea{
+            width:200px;
+        }
+        th, td{
+            padding:5px;
+        }
+        #city{
+            width:100px;
+        }
+        #state, #post-code, #phone, #phone-prefix, #phone-endfix{
+            width:50px;
+        }
+        #first-date, #second-date{
+            width:30px;
+        }
+        input[type="submit"]{
+            width:60px;
+        }
+        input[type="reset"]{
+            width:100px;
+        }
+    </style>
+    <!--Problem 1. Registration form
+
+    Create a Web form that looks like this sample:-->
+</head>
+<body>
+    <form action="registration-form.html" method="post">
+        <table>
+            <colgroup>
+                <col width="150" />
+                <col width="300" />
+            </colgroup>
+            <tr>
+                <th>
+                    <label for="last-name">Last Name</label>
+                </th>
+                <td>
+                    <input type="text" id="last-name" placeholder="Enter your last name" autofocus="autofocus" required="required" name="last-name"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="first-name">First Name</label>
+                </th>
+                <td>
+                    <input type="text" id="first-name" placeholder="Enter your first name" autofocus="autofocus" required="required" name="first-name" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="address">Address</label>
+                </th>
+                <td>
+                    <textarea id="address" placeholder="Enter your address" required="required" name="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="city">City</label>
+                </th>
+                <td>
+                    <input id="city" type="text" name="city" />
+                    <label for="state">State</label>
+                    <input type="text" id="state"  name="state"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="post-code">Zip/Postal Code</label>
+                </th>
+                <td>
+                    <input type="text" id="post-code" maxlength="4" pattern="[0-9]" name="post-code"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="country">Country</label>
+                </th>
+                <td>
+                    <select id="country" name="country">
+                        <option>UK</option>
+                        <option>U.S.A.</option>
+                        <option selected="selected">Bulgaria</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="phone">Phone(country code, area code, number)</label>
+                </th>
+                <td>
+                    (+<input type="text" maxlength="3" pattern="[0-9]" id="phone" name="phone-code"/>)
+                    <input type="text" maxlength="4" pattern="[0-9]" id="phone-prefix" name="phone-prefix" />
+                    <input type="text" maxlength="6" pattern="[0-9]" id="phone-endfix" name="phone-endfix" />
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="email">E-mail</label>
+                </th>
+                <td>
+                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="e-mail">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="birth-date">Birth date</label>
+                </th>
+                <td>
+                    <input type="date" id="birth-date" placeholder="dd.mm.yyyy" name="birthday">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="gender">Gender</label>
+                </th>
+                <td>
+                    <select name="person-gender">
+                        <option>Male</option>
+                        <option>Fimale</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="startind-date">Starting date</label>
+                </th>
+                <td>
+                    <input type="radio" name="date" id="first-date" />
+                    <label for="first-date">Spring 2015</label>
+                    <input type="radio" name="date" id="second-date" />
+                    <label for="second-date">Summer 2015</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="comments">Comments/Questions</label>
+                </th>
+                <td>
+                    <textarea id="comments" name="comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" value="Clean this form" />
+                </td>
+            </tr>
+        </table>
+    </form>
+   
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Grid component</title>
+    <link href="../css/grid.css" rel="stylesheet" />
+</head>
+<body>
+    <table border="1" cellpadding="5" width="1000">
+        <thead>
+            <tr>
+                <td colspan="12">Drag a column header and drop it here to group by that column</td>
+            </tr>
+            <tr>
+                <td>ProductID</td>
+                <td colspan="4">Product name</td>
+                <td colspan="2">Unit price</td>
+                <td colspan="2">Quantity per unit</td>
+                <td colspan="2">Units in stock</td>
+                <td>Discontinuet</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="ProductID" size="2" />
+                </td>
+                <td colspan="4">
+                    <input type="text" name="Product name" size="10" />
+                </td>
+                <td colspan="2">
+                    <input type="text" name="Unit Price" size="10" />
+                    <input type="button" name="Price" class="btn" />
+                <td colspan="2">
+                    <input type="text" name="Quantity" size="10" />
+                </td>
+                <td colspan="2">
+                    <input type="text" name="Stock" size="10" />
+                    <input type="button" name="stock" class="btn" />
+                </td>
+                <td>
+                    <input type="checkbox" name="Discontinuet" />
+                    <input type="button" name="discontinuet" class="btn" />
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="4">Chai</td>
+                <td colspan="2">$18.00</td>
+                <td colspan="2">10 boxes x 20 bags</td>
+                <td colspan="2">39</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="4">Chang</td>
+                <td colspan="2">$19.00</td>
+                <td colspan="2">24 - 12 oz bottles</td>
+                <td colspan="2">17</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td colspan="4">Aniseed Syrup</td>
+                <td colspan="2">$10.00</td>
+                <td colspan="2">12 - 550 ml bottles</td>
+                <td colspan="2">13</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td colspan="4">Chef Anton's Cajun Seasoning</td>
+                <td colspan="2">$22.00</td>
+                <td colspan="2">48 - 6 oz jars</td>
+                <td colspan="2">53</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td colspan="4">Chef Anton's Gumbo Mix</td>
+                <td colspan="2">$21.35</td>
+                <td colspan="2">36 boxes</td>
+                <td colspan="2">0</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td colspan="4">Grandma's Boysenberry Spread</td>
+                <td colspan="2">$25.00</td>
+                <td colspan="2">12 - 8 oz jars</td>
+                <td colspan="2">120</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td colspan="4">Uncle Bob's Organic Dried Pears</td>
+                <td colspan="2">$30.00</td>
+                <td colspan="2">12 - 1 lb pkgs.</td>
+                <td colspan="2">15</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td colspan="4">Northwood Cranberry Sauce</td>
+                <td colspan="2">$40.00</td>
+                <td colspan="2">12 - 12 oz jars</td>
+                <td colspan="2">6</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td colspan="4">Mishi Kobe Niku</td>
+                <td colspan="2">$97.00</td>
+                <td colspan="2">18 - 500 g pkgs.</td>
+                <td colspan="2">29</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td colspan="4">Ikura </td>
+                <td colspan="2">$31.00</td>
+                <td colspan="2">12 - 200 ml jars</td>
+                <td colspan="2">31</td>
+                <td>
+                    <input type="checkbox" />
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="12">
+                    <table width="1000">
+                        <tr>
+                            <td colspan="8">
+                                <input type="button" class="return" />
+                                <input type="button" class="preview" />
+                                <strong>1 2 3 4 5 6 7 8 9 10 ...</strong>
+                                <input type="button" class="next" />
+                                <input type="button" class="continues" />
+                                <strong>Page size</strong>
+                                <select>
+                                    <option>10</option>
+                                    <option>8</option>
+                                    <option>6</option>
+                                    <option>4</option>
+                                    <option>2</option>
+                                </select>
+
+                            </td>
+                            <td colspan="4" align="right">
+                                <b>335104 items in 33511 pages</b>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+</body>
+</html>

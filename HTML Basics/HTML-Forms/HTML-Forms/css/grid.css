@@ -1,0 +1,57 @@
+﻿.btn {
+background-image: url(../images/btn.png);
+background-position: center center;
+background-repeat: no-repeat;
+cursor: pointer;
+width: 22px;
+height: 22px;
+margin-left: 6px;
+}
+.preview {
+    background-image: url(../images/132.png);
+background-position: center center;
+background-repeat: no-repeat;
+cursor: pointer;
+width: 22px;
+height: 22px;
+margin-left: 6px;
+}
+.return{
+    background-image: url(../images/138.png);
+background-position: center center;
+background-repeat: no-repeat;
+cursor: pointer;
+width: 22px;
+height: 22px;
+margin-left: 6px;
+}
+.next{
+    background-image: url(../images/131.png);
+background-position: center center;
+background-repeat: no-repeat;
+cursor: pointer;
+width: 22px;
+height: 22px;
+margin-left: 6px;
+}
+.continues{
+    background-image: url(../images/137.png);
+background-position: center center;
+background-repeat: no-repeat;
+cursor: pointer;
+width: 22px;
+height: 22px;
+margin-left: 6px;
+}
+
+tr td table{
+    border:thin;
+}
+table{
+    border:solid 2px;
+    border-radius:7px;
+}
+thead,tfoot{
+    background-color: #E6E6FA;
+}
+
