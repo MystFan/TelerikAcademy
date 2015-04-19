@@ -69,6 +69,7 @@
     <Content Include="01.HTMLTables\letters-table.html" />
     <Content Include="02.HTML Form\form.html" />
     <Content Include="03.Calculator\calculator.html" />
+    <Content Include="css\calculator.css" />
     <Content Include="images\fruit.png" />
     <Content Include="images\registration_submit_icon.png" />
     <Content Include="Web.config" />

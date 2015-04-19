@@ -1,0 +1,24 @@
+﻿table {
+    background-color: #F3F9FA;
+    border-collapse: collapse;
+    border: 2px solid #9FD1DC;
+    text-align: center;
+    color: #9FD1DC;
+}
+
+button {
+    color: #4B9BF2;
+    font-weight: 300;
+}
+
+td {
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 180px;
+}
+
+table tr:last-child td:first-child button {
+    width: 80px;
+}
