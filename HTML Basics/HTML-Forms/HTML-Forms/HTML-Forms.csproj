@@ -70,6 +70,9 @@
     <Content Include="03.Notebook store\notebook-store.html" />
     <Content Include="04.Grid component\grid-component.html" />
     <Content Include="css\grid.css" />
+    <Content Include="css\notebook-store.css" />
+    <Content Include="css\registration-form.css" />
+    <Content Include="css\university-grid.css" />
     <Content Include="images\131.png" />
     <Content Include="images\132.png" />
     <Content Include="images\137.png" />

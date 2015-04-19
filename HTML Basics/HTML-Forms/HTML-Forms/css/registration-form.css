@@ -1,0 +1,37 @@
+﻿table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+    table tr:last-child {
+        background-color: aqua;
+        text-align: center;
+    }
+
+input, textarea {
+    width: 200px;
+}
+
+th, td {
+    padding: 5px;
+}
+
+#city {
+    width: 100px;
+}
+
+#state, #post-code, #phone, #phone-prefix, #phone-endfix {
+    width: 50px;
+}
+
+#first-date, #second-date {
+    width: 30px;
+}
+
+input[type="submit"] {
+    width: 60px;
+}
+
+input[type="reset"] {
+    width: 100px;
+}
