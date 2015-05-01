@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Windows Calculator</title>
+    <meta charset="utf-8" />
+    <link href="css/CSS-Task4-Windows Calculator.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <div class="head">
+            <img src="images/calculator-icon.png" />
+            <sup>Calculator</sup>
+            <div class="buttons">
+                <button class="button1">-</button>
+                <button class="button2"> &#9744 </button>
+                <button class="button3">X</button>
+            </div>
+        </div>
+        <div id="sheet">
+            <div class="navigation">
+                <nav>
+                    <button>View</button>
+                    <button>Edit</button>
+                    <button>Help</button>
+                </nav>
+            </div>
+            <div class="display">
+                <span>0</span>
+            </div>
+            <div class="binery">
+                <span>&#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000</span>
+                <span>&#031  &#031 63 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 47 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 32</span>
+                <span>&#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000 &#031 &#031 0000</span>
+                <span>&#031  &#031 31 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 15 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 &#031 0</span>
+            </div>
+            <div class="keyboard">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <table cellpadding="2">
+                                <tr>
+                                    <td rowspan="3">
+                                        <input type="radio" id="Hex" name="radio" />
+                                        <label for="Hex">Hex</label><br />
+                                        <input type="radio" id="Dec" name="radio" />
+                                        <label for="Dec">Dec</label><br />
+                                        <input type="radio" id="Oct" name="radio" />
+                                        <label for="Oct">Oct</label><br />
+                                        <input type="radio" id="Bin" name="radio" />
+                                        <label for="Bin">Bin</label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td rowspan="3">
+                                        <input type="radio" id="Qword" name="radio1" />
+                                        <label for="Qword">Qword</label><br />
+                                        <input type="radio" id="Dword" name="radio1" />
+                                        <label for="Dword">Dword</label><br />
+                                        <input type="radio" id="Word" name="radio1" />
+                                        <label for="Word">Word</label><br />
+                                        <input type="radio" id="Byte" name="radio1" />
+                                        <label for="Byte">Byte</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table cellspacing="4">
+                                <tr>
+                                    <td class="symbols">
+                                        <button></button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>Mod</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button class="alphabet">A</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>MC</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>MR</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>MS</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>M+</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>M-</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="symbols">
+                                        <button>(</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>)</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button class="alphabet">B</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button class="symbol">
+                                            &#8592
+                                        </button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>CE</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>C</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button> &#177 </button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button> &#8730 </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="symbols">
+                                        <button>RoL</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>RoR</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button class="alphabet">C</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>7</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>8</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>9</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button> &#8725 </button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>%</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="symbols">
+                                        <button>Or</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>Xor</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button class="alphabet">D</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>4</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>5</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>6</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button> * </button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>1/x</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="symbols">
+                                        <button>Lsh</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>Rsh</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button class="alphabet">E</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>1</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>2</button>
+                                    </td>
+                                    <td class="digit">
+                                        <button>3</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>-</button>
+                                    </td>
+                                    <td rowspan="2" class="symbols">
+                                        <button>=</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="symbols">
+                                        <button>Not</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>And</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button class="alphabet">F</button>
+                                    </td>
+                                    <td colspan="2" class="digit">
+                                        <button>0</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>,</button>
+                                    </td>
+                                    <td class="symbols">
+                                        <button>+</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
