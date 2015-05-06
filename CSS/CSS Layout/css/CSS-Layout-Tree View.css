@@ -1,0 +1,16 @@
+﻿li ul {
+    margin-left:60px;
+    display:none;
+}
+li:hover > ul {
+    width:150px;
+    display:block;
+    background-color:#76b5b5;
+}
+li{
+    list-style-type:none;
+}
+ul{
+    margin:0;
+    padding:0;
+}

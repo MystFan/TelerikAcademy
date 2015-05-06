@@ -1,0 +1,66 @@
+﻿body {
+    font-family:Verdana;
+}
+h3 a{
+    color:#07B0F0;
+}
+#container{
+    width:800px;
+    height:650px;
+    border:2px solid #363636;
+    float:left;
+    position:relative;
+}
+#container .fieldset{
+    float:left;
+    margin:10px;
+}
+#container fieldset{
+    width:340px;
+}
+#container fieldset img{
+    width:150px;
+    position:relative;
+    float:left;
+}
+#container fieldset .parameter{
+    width:110px;
+    position:relative;
+    float:left;
+    margin-left:50px;
+    margin-top:50px;
+}
+#container fieldset .price{
+    margin-left:50px;
+}
+#container fieldset .price span:last-child{
+    margin-left:70px;
+}
+.clearfix {
+    zoom:1;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+}
+#aside {
+    width:300px;
+    float:left;
+    margin-top:110px;
+    margin-left:800px;
+    position:absolute;
+}
+#aside .min-max span{
+    margin-left:50px;
+}
+#aside .min-max span:last-child{
+    margin-left:50px;
+}
+#aside .min-max .range{
+    margin:20px;
+    margin-left:50px;
+    margin-bottom:40px;
+
+}
