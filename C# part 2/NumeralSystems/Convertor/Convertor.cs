@@ -82,6 +82,10 @@ namespace Convertor
         {
             long num;
             string hex = String.Empty;
+            if (number <= 9)
+            {
+                return number.ToString();
+            }
             do
             {
                 num = number % 16;
@@ -98,7 +102,7 @@ namespace Convertor
                         case 16: hex = hex + "G"; break;
                     }
                 }
-                if (num <= 9)
+                else if (num <= 9)
                 {
                     hex = hex + num.ToString();
                 }
