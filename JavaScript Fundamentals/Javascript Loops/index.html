@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Loops</title>
+    <meta charset="utf-8" />
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <link href="styles/input.css" rel="stylesheet" />
+</head>
+<body>
+    <label for="task-menager">Select Task</label>
+    <select id="task-menager" onchange="run()">
+        <option selected="selected">Problem 1: Numbers</option>
+        <option>Problem 2: Numbers not divisible</option>
+        <option>Problem 3: Min/Max of sequence</option>
+        <option>Problem 4: Lexicographically smallest</option>
+    </select>
+    <input type="text" id="tb-number" />
+    <button id="btn-run" onclick="printNumbersToN()"></button>
+    <span id="message"></span>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿input[type=text] {
+    border: 1px solid black;
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    font-family: Consolas;
+    margin-bottom: 5px;
+}
+#message, label[for="task-menager"], select{
+    font-size:22px;
+    font-family: Consolas;
+}
+
+button {
+    color: black;
+    border: 1px solid black;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+    button:hover {
+        text-decoration: underline;
+    }
