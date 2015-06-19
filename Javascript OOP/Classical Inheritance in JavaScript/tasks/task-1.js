@@ -31,7 +31,6 @@ function solve() {
 			this.firstname = firstname;
 			this.lastname = lastname;
 			this.age = age;
-			this.fullname = firstname + ' ' + lastname;
 		}
 
 		Object.defineProperty(Person.prototype, 'firstname', {
@@ -66,10 +65,10 @@ function solve() {
 		 
 		 Object.defineProperty(Person.prototype, 'fullname', {
 		    get: function() {
-		      return this._fullname;
+		      return this.firstname + ' ' + this.lastname;
 		    },
 		 	set: function(value) {
-				this._fullname = validateFullname(value);
+				value = validateFullname(value);
 				var names = value.split(' ').filter(function (str) {
 					return !!str;
 				});
