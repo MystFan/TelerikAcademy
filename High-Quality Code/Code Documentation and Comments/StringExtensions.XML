@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StringExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:StringExtensions.StringExtensions">
+            <summary>
+            Static class extending the functionality of String
+            </summary>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToMd5Hash(System.String)">
+            <summary>
+            Encrypts string with algorithm Md5
+            </summary>
+            <param name="input">String instance</param>
+            <returns>Encrypted string</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToBoolean(System.String)">
+            <summary>
+            Parse string to boolean
+            </summary>
+            <param name="input">String instance.True like String("true", "ok", "yes", "1", "да")</param>
+            <returns>If successful returns parsed boolean value or failure return the default value</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToShort(System.String)">
+            <summary>
+            Parse string to type "Short"
+            </summary>
+            <param name="input">String instance representation of the number</param>
+            <returns>If successful returns parsed number or failure return the default value</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToInteger(System.String)">
+            <summary>
+            Parse string to type Integer
+            </summary>
+            <param name="input">String instance representation of the number</param>
+            <returns>If successful returns parsed number or failure return the default value</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToLong(System.String)">
+            <summary>
+            Parse string to type "Long"
+            </summary>
+            <param name="input">String instance representation of the number</param>
+            <returns>If successful returns parsed number or failure return the default value</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToDateTime(System.String)">
+            <summary>
+            Parse string to type "DateTime"
+            </summary>
+            <param name="input">String instance in date format</param>
+            <returns>If successful returns parsed DateTime or failure return the default value</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.CapitalizeFirstLetter(System.String)">
+            <summary>
+            Makes the first letter capitalized
+            </summary>
+            <param name="input">String instance to be capitalized</param>
+            <returns>Returns a string with the first capital letter</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.GetStringBetween(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Gets a substring between two substring in a string
+            </summary>
+            <param name="input">String instance.</param>
+            <param name="startString">Start substring</param>
+            <param name="endString">End substring</param>
+            <param name="startFrom">The starting index of the substring we seek</param>
+            <returns>Return the first occurrence of the substring or if there is no return empty string</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ConvertCyrillicToLatinLetters(System.String)">
+            <summary>
+            Convert cyrillic to latin letters
+            </summary>
+            <param name="input">String instance.Cyrillic letters string</param>
+            <returns>Latin letters string</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ConvertLatinToCyrillicKeyboard(System.String)">
+            <summary>
+            Convert latin to cyrillic letters
+            </summary>
+            <param name="input">String instance.Latin letters string</param>
+            <returns>Cyrillic letters string</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToValidUsername(System.String)">
+            <summary>
+            Remove invalid symbols in username string
+            </summary>
+            <param name="input">String instance.Username value</param>
+            <returns>Username without invalid symbols</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToValidLatinFileName(System.String)">
+            <summary>
+            Remove invalid symbols in file name string
+            </summary>
+            <param name="input">String instance.File name value</param>
+            <returns>File name without invalid symbols</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.GetFirstCharacters(System.String,System.Int32)">
+            <summary>
+            Gets a string from the beginning of a string of a certain length
+            </summary>
+            <param name="input">String instance.</param>
+            <param name="charsCount">Substring length to return</param>
+            <returns>Substring from beginning with certain length</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.GetFileExtension(System.String)">
+            <summary>
+            Get extension of file
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <returns>Extension substring</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToContentType(System.String)">
+            <summary>
+            Determine the contents of the file by the extension
+            </summary>
+            <param name="fileExtension">File extension value</param>
+            <returns>File content type.If no such extension return "application/octet-stream"</returns>
+        </member>
+        <member name="M:StringExtensions.StringExtensions.ToByteArray(System.String)">
+            <summary>
+            Convert string to byte array
+            </summary>
+            <param name="input">String instance</param>
+            <returns>Byte array</returns>
+        </member>
+    </members>
+</doc>
