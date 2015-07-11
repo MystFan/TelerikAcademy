@@ -263,7 +263,5 @@ function solve() {
 
     return Course;
 }
-var Course = solve();
-var id, jsoop = Object.create(Course);
 
 module.exports = solve;
