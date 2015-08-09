@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Tests", "School.Tests\School.Tests.csproj", "{416F4D17-B1D6-4336-88F5-9AC6CD391CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santase.Logic", "SantaseGameEngine-master\SantaseGameEngine-master\Source\Santase.Logic\Santase.Logic.csproj", "{76FD6AC0-6F00-4F92-8857-876E60AA9FE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santase.ConsoleUI", "SantaseGameEngine-master\SantaseGameEngine-master\Source\Santase.ConsoleUI\Santase.ConsoleUI.csproj", "{D955B803-9058-49A4-B97C-6C13B01B4C70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School", "School\School.csproj", "{3D4ECD4B-2B5B-4F6C-8907-1D37ACE2BF6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deck.Tests", "Deck.Tests\Deck.Tests.csproj", "{ABE831FD-4793-40B3-9D2D-AAB46A6688B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerActionValidater.Tests", "PlayerActionValidater.Tests\PlayerActionValidater.Tests.csproj", "{62C7D931-670A-44F9-88F6-DADB2D010771}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{416F4D17-B1D6-4336-88F5-9AC6CD391CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416F4D17-B1D6-4336-88F5-9AC6CD391CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416F4D17-B1D6-4336-88F5-9AC6CD391CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416F4D17-B1D6-4336-88F5-9AC6CD391CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76FD6AC0-6F00-4F92-8857-876E60AA9FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76FD6AC0-6F00-4F92-8857-876E60AA9FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76FD6AC0-6F00-4F92-8857-876E60AA9FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76FD6AC0-6F00-4F92-8857-876E60AA9FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D955B803-9058-49A4-B97C-6C13B01B4C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D955B803-9058-49A4-B97C-6C13B01B4C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D955B803-9058-49A4-B97C-6C13B01B4C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D955B803-9058-49A4-B97C-6C13B01B4C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4ECD4B-2B5B-4F6C-8907-1D37ACE2BF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4ECD4B-2B5B-4F6C-8907-1D37ACE2BF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4ECD4B-2B5B-4F6C-8907-1D37ACE2BF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4ECD4B-2B5B-4F6C-8907-1D37ACE2BF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE831FD-4793-40B3-9D2D-AAB46A6688B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE831FD-4793-40B3-9D2D-AAB46A6688B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE831FD-4793-40B3-9D2D-AAB46A6688B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE831FD-4793-40B3-9D2D-AAB46A6688B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C7D931-670A-44F9-88F6-DADB2D010771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C7D931-670A-44F9-88F6-DADB2D010771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C7D931-670A-44F9-88F6-DADB2D010771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C7D931-670A-44F9-88F6-DADB2D010771}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
