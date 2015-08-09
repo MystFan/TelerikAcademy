@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/jquery/dist/handlebars.min.js"></script>
+	</head>
+	<body>
+		<script id="template" type="text/handlebars-template-x">
+			<div class="container">
+			              <h1>Animals</h1>
+			              <ul class="animals-list">
+						     {{#animals}}
+							 	<li>
+							 	{{#if this.url}}
+								 	<a href="{{this.url}}">See a {{this.name}}</a>
+								 {{else}}
+								 	<a href="http://cdn.playbuzz.com/cdn/3170bee8-985c-47bc-bbb5-2bcb41e85fe9/d8aa4750-deef-44ac-83a1-f2b5e6ee029a.jpg">{{this.name}}</a>
+								{{/if}} 
+									 
+								 </li>
+							 {{/animals}}             
+			              </ul>
+			            </div>
+		</script>
+		<script src="task-2.js">
+</script>
+	</body>
+
+</html>

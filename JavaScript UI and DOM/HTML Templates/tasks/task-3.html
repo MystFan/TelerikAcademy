@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/jquery/dist/handlebars.min.js"></script>
+	</head>
+	<body>
+		<ul id="books-list" data-template="book-item-template"></ul>
+		<script id="book-item-template" type="text/handlebars-template-x">
+			<li class="book-item">
+			   <a href="/#books/{{id}}">
+			     <strong>{{title}}</strong>
+			   </a>
+			 </li>
+		</script>
+		<script src="task-3.js"></script>
+	</body>
+
+</html>
