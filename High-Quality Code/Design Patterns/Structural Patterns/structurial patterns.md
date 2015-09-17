@@ -23,7 +23,7 @@
 ### пример:
 
 
-```sh
+```cs
 abstract class MailReceiver {
     public abstract void SendMail();
 }
@@ -46,6 +46,7 @@ static void Main() {
     rootGroup.SendMail();
 }
 ```
+##### See example CompositePattern in Structurial Patterns
 
 ## Flyweight Pattern
 
@@ -59,6 +60,8 @@ static void Main() {
 > Пример от .NET е string.Intern()
 
 ![](flyweight.gif)
+
+##### See example FlyweightPattern in Structurial Patterns
 
 ## Decorator Pattern
 
@@ -75,3 +78,5 @@ static void Main() {
 ### Diagram example:
 
 ![](decoratorDiagram.png)
+
+##### See example DecoratorPattern in Structurial Patterns

@@ -25,7 +25,7 @@
 
 ### Singleton на езика C#
 - Еднонишкова реализация
-```sh
+```cs
 public class Singleton {
     private static Singleton instance;
     protected Singleton() { }
@@ -40,7 +40,7 @@ public class Singleton {
 }
 ```
 - Многонишкова реализация чрез lock конструкция
-```sh
+```cs
 public sealed class SingletonThreadSafe {
     private static volatile SingletonThreadSafe instance;
     private static object syncLock = new object();
@@ -62,7 +62,7 @@ public sealed class SingletonThreadSafe {
 }
 ```
 - Многонишкова реализация чрез вложен клас
-```sh
+```cs
 public sealed class Singleton {
     private Singleton() { }
     public static Singleton Instance {
@@ -78,7 +78,7 @@ public sealed class Singleton {
 }
 ```
 - Многонишкова реализация чрез вградения в .NET клас Lazy
-```sh
+```cs
 public sealed class Singleton
 {
     private static readonly Lazy<Singleton> lazy = new Lazy<Singleton>( () => new Singleton());
@@ -98,7 +98,7 @@ public sealed class Singleton
 Шаблона Abstract Factory ни помага да създаваме обекти. В него се слага логиката при създаването на обекти.
 Този шаблон консруира повече от един обект. Той ни дава interface за създаване на свързани по между си обекти.
 Без да знаем конкретните класове.
-```sh
+```cs
 abstract class ContinentFactory { // AbstractFactory
    public abstract Herbivore CreateHerbivore();
    public abstract Carnivore CreateCarnivore();
@@ -125,7 +125,7 @@ class AmericaFactory : ContinentFactory {
 > Ние лесно можем да подменяме различните Factory класове или през клиентския код в Main метода
 > или през App.config
 
-```sh
+```cs
 var factoryClassName = ConfigurationManager.AppSettings["ManufacturerFactory"];
 var foodFactory = Assembly.GetExecutingAssembly()
                             .CreateInstance(factoryClassName) as RestaurantFactory;
