@@ -20,8 +20,6 @@
 
         public double CoinsChange { get; set; }
 
-        public double HotChocolatePrice { get; set; }
-
         public void AddDrink(string name, double price)
         {
             this.Drinks.Add(name, price);
