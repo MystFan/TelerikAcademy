@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <dir>
+    <file>..\..\..\Processing XML in .NET.sln</file>
+    <file>..\..\..\Processing XML in .NET.v12.suo</file>
+    <dir dirName="..\..\..\10.DirectoriesXML">
+      <dir>
+        <file>..\..\..\10.DirectoriesXML\10.DirectoriesXML.csproj</file>
+        <file>..\..\..\10.DirectoriesXML\10.DirectoriesXML.csproj.user</file>
+        <file>..\..\..\10.DirectoriesXML\App.config</file>
+        <file>..\..\..\10.DirectoriesXML\dirs.xml</file>
+        <file>..\..\..\10.DirectoriesXML\EntryPoint.cs</file>
+        <file>..\..\..\10.DirectoriesXML\Settings.StyleCop</file>
+        <file>..\..\..\10.DirectoriesXML\StyleCop.Cache</file>
+        <dir dirName="..\..\..\10.DirectoriesXML\bin">
+          <dir>
+            <dir dirName="..\..\..\10.DirectoriesXML\bin\Debug">
+              <dir>
+                <file>..\..\..\10.DirectoriesXML\bin\Debug\9.DirectoriesXML.exe</file>
+                <file>..\..\..\10.DirectoriesXML\bin\Debug\9.DirectoriesXML.exe.config</file>
+                <file>..\..\..\10.DirectoriesXML\bin\Debug\9.DirectoriesXML.pdb</file>
+                <file>..\..\..\10.DirectoriesXML\bin\Debug\9.DirectoriesXML.vshost.exe</file>
+                <file>..\..\..\10.DirectoriesXML\bin\Debug\9.DirectoriesXML.vshost.exe.config</file>
+                <file>..\..\..\10.DirectoriesXML\bin\Debug\9.DirectoriesXML.vshost.exe.manifest</file>
+              </dir>
+            </dir>
+            <dir dirName="..\..\..\10.DirectoriesXML\bin\Release">
+              <dir />
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\10.DirectoriesXML\obj">
+          <dir>
+            <dir dirName="..\..\..\10.DirectoriesXML\obj\Debug">
+              <dir>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\10.DirectoriesXML.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\10.DirectoriesXML.csprojResolveAssemblyReference.cache</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\9.DirectoriesXML.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\9.DirectoriesXML.exe</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\9.DirectoriesXML.pdb</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+                <file>..\..\..\10.DirectoriesXML\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+                <dir dirName="..\..\..\10.DirectoriesXML\obj\Debug\TempPE">
+                  <dir />
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\10.DirectoriesXML\Properties">
+          <dir>
+            <file>..\..\..\10.DirectoriesXML\Properties\AssemblyInfo.cs</file>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+    <dir dirName="..\..\..\2.ExtractsAllDifferentArtists">
+      <dir>
+        <file>..\..\..\2.ExtractsAllDifferentArtists\2.ExtractsAllDifferentArtists.csproj</file>
+        <file>..\..\..\2.ExtractsAllDifferentArtists\App.config</file>
+        <file>..\..\..\2.ExtractsAllDifferentArtists\EntryPoint.cs</file>
+        <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\bin">
+          <dir>
+            <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\bin\Debug">
+              <dir>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\2.ExtractsAllDifferentArtists.exe</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\2.ExtractsAllDifferentArtists.exe.config</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\2.ExtractsAllDifferentArtists.pdb</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\2.ExtractsAllDifferentArtists.vshost.exe</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\2.ExtractsAllDifferentArtists.vshost.exe.config</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\2.ExtractsAllDifferentArtists.vshost.exe.manifest</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\Helpers.dll</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\bin\Debug\Helpers.pdb</file>
+              </dir>
+            </dir>
+            <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\bin\Release">
+              <dir />
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\obj">
+          <dir>
+            <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\obj\Debug">
+              <dir>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\2.ExtractsAllDifferentArtists.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\2.ExtractsAllDifferentArtists.csprojResolveAssemblyReference.cache</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\2.ExtractsAllDifferentArtists.exe</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\2.ExtractsAllDifferentArtists.pdb</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+                <file>..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+                <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\obj\Debug\TempPE">
+                  <dir />
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\Properties">
+          <dir>
+            <file>..\..\..\2.ExtractsAllDifferentArtists\Properties\AssemblyInfo.cs</file>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\2.ExtractsAllDifferentArtists\xml">
+          <dir>
+            <file>..\..\..\2.ExtractsAllDifferentArtists\xml\catalogue.xml</file>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+    <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath">
+      <dir>
+        <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\3.ExtractsAllDifferentArtistsWithXPath.csproj</file>
+        <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\App.config</file>
+        <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\EntryPoint.cs</file>
+        <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin">
+          <dir>
+            <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug">
+              <dir>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\3.ExtractsAllDifferentArtistsWithXPath.exe</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\3.ExtractsAllDifferentArtistsWithXPath.exe.config</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\3.ExtractsAllDifferentArtistsWithXPath.pdb</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\3.ExtractsAllDifferentArtistsWithXPath.vshost.exe</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\3.ExtractsAllDifferentArtistsWithXPath.vshost.exe.config</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\3.ExtractsAllDifferentArtistsWithXPath.vshost.exe.manifest</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\Helpers.dll</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Debug\Helpers.pdb</file>
+              </dir>
+            </dir>
+            <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\bin\Release">
+              <dir />
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj">
+          <dir>
+            <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug">
+              <dir>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\3.ExtractsAllDifferentArtistsWithXPath.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\3.ExtractsAllDifferentArtistsWithXPath.csprojResolveAssemblyReference.cache</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\3.ExtractsAllDifferentArtistsWithXPath.exe</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\3.ExtractsAllDifferentArtistsWithXPath.pdb</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+                <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+                <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\obj\Debug\TempPE">
+                  <dir />
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\Properties">
+          <dir>
+            <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\Properties\AssemblyInfo.cs</file>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\3.ExtractsAllDifferentArtistsWithXPath\xml">
+          <dir>
+            <file>..\..\..\3.ExtractsAllDifferentArtistsWithXPath\xml\catalogue.xml</file>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+    <dir dirName="..\..\..\4.DeleteAlbumByPrice">
+      <dir>
+        <file>..\..\..\4.DeleteAlbumByPrice\4.DeleteAlbumByPrice.csproj</file>
+        <file>..\..\..\4.DeleteAlbumByPrice\4.DeleteAlbumByPrice.csproj.user</file>
+        <file>..\..\..\4.DeleteAlbumByPrice\App.config</file>
+        <file>..\..\..\4.DeleteAlbumByPrice\EntryPoint.cs</file>
+        <dir dirName="..\..\..\4.DeleteAlbumByPrice\bin">
+          <dir>
+            <dir dirName="..\..\..\4.DeleteAlbumByPrice\bin\Debug">
+              <dir>
+                <file>..\..\..\4.DeleteAlbumByPrice\bin\Debug\4.DeleteAlbumByPrice.exe</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\bin\Debug\4.DeleteAlbumByPrice.exe.config</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\bin\Debug\4.DeleteAlbumByPrice.pdb</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\bin\Debug\4.DeleteAlbumByPrice.vshost.exe</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\bin\Debug\4.DeleteAlbumByPrice.vshost.exe.config</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\bin\Debug\Helpers.dll</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\bin\Debug\Helpers.pdb</file>
+              </dir>
+            </dir>
+            <dir dirName="..\..\..\4.DeleteAlbumByPrice\bin\Release">
+              <dir />
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\4.DeleteAlbumByPrice\obj">
+          <dir>
+            <dir dirName="..\..\..\4.DeleteAlbumByPrice\obj\Debug">
+              <dir>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\4.DeleteAlbumByPrice.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\4.DeleteAlbumByPrice.csprojResolveAssemblyReference.cache</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\4.DeleteAlbumByPrice.exe</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\4.DeleteAlbumByPrice.pdb</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+                <file>..\..\..\4.DeleteAlbumByPrice\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+                <dir dirName="..\..\..\4.DeleteAlbumByPrice\obj\Debug\TempPE">
+                  <dir />
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\4.DeleteAlbumByPrice\Properties">
+          <dir>
+            <file>..\..\..\4.DeleteAlbumByPrice\Properties\AssemblyInfo.cs</file>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\4.DeleteAlbumByPrice\xml">
+          <dir>
+            <file>..\..\..\4.DeleteAlbumByPrice\xml\catalogue.xml</file>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+    <dir dirName="..\..\..\5.GetSongsTitles">
+      <dir>
+        <file>..\..\..\5.GetSongsTitles\5.GetSongsTitles.csproj</file>
+        <file>..\..\..\5.GetSongsTitles\App.config</file>
+        <file>..\..\..\5.GetSongsTitles\EntryPoint.cs</file>
+        <dir dirName="..\..\..\5.GetSongsTitles\bin">
+          <dir>
+            <dir dirName="..\..\..\5.GetSongsTitles\bin\Debug">
+              <dir>
+                <file>..\..\..\5.GetSongsTitles\bin\Debug\5.GetSongsTitles.exe</file>
+                <file>..\..\..\5.GetSongsTitles\bin\Debug\5.GetSongsTitles.exe.config</file>
+                <file>..\..\..\5.GetSongsTitles\bin\Debug\5.GetSongsTitles.pdb</file>
+                <file>..\..\..\5.GetSongsTitles\bin\Debug\5.GetSongsTitles.vshost.exe</file>
+                <file>..\..\..\5.GetSongsTitles\bin\Debug\5.GetSongsTitles.vshost.exe.config</file>
+                <file>..\..\..\5.GetSongsTitles\bin\Debug\Helpers.dll</file>
+                <file>..\..\..\5.GetSongsTitles\bin\Debug\Helpers.pdb</file>
+              </dir>
+            </dir>
+            <dir dirName="..\..\..\5.GetSongsTitles\bin\Release">
+              <dir />
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\5.GetSongsTitles\obj">
+          <dir>
+            <dir dirName="..\..\..\5.GetSongsTitles\obj\Debug">
+              <dir>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\5.GetSongsTitles.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\5.GetSongsTitles.csprojResolveAssemblyReference.cache</file>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\5.GetSongsTitles.exe</file>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\5.GetSongsTitles.pdb</file>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+                <file>..\..\..\5.GetSongsTitles\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+                <dir dirName="..\..\..\5.GetSongsTitles\obj\Debug\TempPE">
+                  <dir />
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\5.GetSongsTitles\Properties">
+          <dir>
+            <file>..\..\..\5.GetSongsTitles\Properties\AssemblyInfo.cs</file>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\5.GetSongsTitles\xml">
+          <dir>
+            <file>..\..\..\5.GetSongsTitles\xml\catalogue.xml</file>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+    <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument">
+      <dir>
+        <file>..\..\..\6.GetSongsTitlesWithXDocument\6.GetSongsTitlesWithXDocument.csproj</file>
+        <file>..\..\..\6.GetSongsTitlesWithXDocument\App.config</file>
+        <file>..\..\..\6.GetSongsTitlesWithXDocument\EntryPoint.cs</file>
+        <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\bin">
+          <dir>
+            <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug">
+              <dir>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\6.GetSongsTitlesWithXDocument.exe</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\6.GetSongsTitlesWithXDocument.exe.config</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\6.GetSongsTitlesWithXDocument.pdb</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\6.GetSongsTitlesWithXDocument.vshost.exe</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\6.GetSongsTitlesWithXDocument.vshost.exe.config</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\6.GetSongsTitlesWithXDocument.vshost.exe.manifest</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\Helpers.dll</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\bin\Debug\Helpers.pdb</file>
+              </dir>
+            </dir>
+            <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\bin\Release">
+              <dir />
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\obj">
+          <dir>
+            <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug">
+              <dir>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\6.GetSongsTitlesWithXDocument.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\6.GetSongsTitlesWithXDocument.csprojResolveAssemblyReference.cache</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\6.GetSongsTitlesWithXDocument.exe</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\6.GetSongsTitlesWithXDocument.pdb</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+                <file>..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+                <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\obj\Debug\TempPE">
+                  <dir />
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\Properties">
+          <dir>
+            <file>..\..\..\6.GetSongsTitlesWithXDocument\Properties\AssemblyInfo.cs</file>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\6.GetSongsTitlesWithXDocument\xml">
+          <dir>
+            <file>..\..\..\6.GetSongsTitlesWithXDocument\xml\catalogue.xml</file>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+    <dir dirName="..\..\..\7.CreatePersonsXML">
+      <dir>
+        <file>..\..\..\7.CreatePersonsXML\7.CreatePersonsXML.csproj</file>
+        <file>..\..\..\7.CreatePersonsXML\7.CreatePersonsXML.csproj.user</file>
+        <file>..\..\..\7.CreatePersonsXML\App.config</file>
+        <file>..\..\..\7.CreatePersonsXML\EntryPoint.cs</file>
+        <file>..\..\..\7.CreatePersonsXML\Person.cs</file>
+        <file>..\..\..\7.CreatePersonsXML\persons.txt</file>
+        <file>..\..\..\7.CreatePersonsXML\persons.xml</file>
+        <file>..\..\..\7.CreatePersonsXML\Settings.StyleCop</file>
+        <file>..\..\..\7.CreatePersonsXML\StyleCop.Cache</file>
+        <dir dirName="..\..\..\7.CreatePersonsXML\bin">
+          <dir>
+            <dir dirName="..\..\..\7.CreatePersonsXML\bin\Debug">
+              <dir>
+                <file>..\..\..\7.CreatePersonsXML\bin\Debug\7.CreatePersonsXML.exe</file>
+                <file>..\..\..\7.CreatePersonsXML\bin\Debug\7.CreatePersonsXML.exe.config</file>
+                <file>..\..\..\7.CreatePersonsXML\bin\Debug\7.CreatePersonsXML.pdb</file>
+                <file>..\..\..\7.CreatePersonsXML\bin\Debug\7.CreatePersonsXML.vshost.exe</file>
+                <file>..\..\..\7.CreatePersonsXML\bin\Debug\7.CreatePersonsXML.vshost.exe.config</file>
+              </dir>
+            </dir>
+            <dir dirName="..\..\..\7.CreatePersonsXML\bin\Release">
+              <dir />
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\7.CreatePersonsXML\obj">
+          <dir>
+            <dir dirName="..\..\..\7.CreatePersonsXML\obj\Debug">
+              <dir>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\7.CreatePersonsXML.csproj.FileListAbsolute.txt</file>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\7.CreatePersonsXML.csprojResolveAssemblyReference.cache</file>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\7.CreatePersonsXML.exe</file>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\7.CreatePersonsXML.pdb</file>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache</file>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+                <file>..\..\..\7.CreatePersonsXML\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+                <dir dirName="..\..\..\7.CreatePersonsXML\obj\Debug\TempPE">
+                  <dir />
+                </dir>
+              </dir>
+            </dir>
+          </dir>
+        </dir>
+        <dir dirName="..\..\..\7.CreatePersonsXML\Properties">
+          <dir>
+            <file>..\..\..\7.CreatePersonsXML\Properties\AssemblyInfo.cs</file>
+          </dir>
+        </dir>
+      </dir>
+    </dir>
+    <dir dirName="..\..\..\8.GetAlbumsAndAuthors">
+      <dir>
+        <file>..\..\..\8.GetAlbumsAndAuthors\8.GetAlbumsAndAuthors.csproj</file>
+        <file>..\..\..\8.GetAlbumsAndAuthors\8.GetAlbumsAndAuthors.csproj.user</file>
+        <file>..\..\..\8.GetAlbumsAndAuthors\App.config</file>
+        <file>..\..\..\8.GetAlbumsAndAuthors\EntryPoint.cs</file>
+        <dir dirName="..\..\..\8.GetAlbumsAndAuthors\bin">
+          <dir>
+            <dir dirName="..\..\..\8.GetAlbumsAndAuthors\bin\Debug">
+              <dir>
+                <file>..\..\..\8.GetAlbumsAndAuthors\bin\Debug\8.GetAlbumsAndAuthors.exe</file>
+                <file>
+                  ..\..\..\8.GetAlbumsAndAuthors\bin\Debug\8.GetAlbumsAndAuthors.exe.config</

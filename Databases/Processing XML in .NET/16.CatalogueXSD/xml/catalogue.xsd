@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="catalogue"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:catalogue"
+           xmlns="urn:catalogue"
+           elementFormDefault="qualified">
+
+  <xs:element name="albums">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="album" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="album">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="artist"/>
+        <xs:element ref="year"/>
+        <xs:element name="producer"/>
+        <xs:element ref="price"/>
+        <xs:element ref="songs"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="artist" type="xs:string"/>
+  <xs:element name="year">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:pattern value="(19[789]\d|20[01]\d)"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="producer" type="xs:string"/>
+  <xs:element name="price">
+    <xs:simpleType>
+      <xs:restriction base="xs:double">
+        <xs:minInclusive value="0.10"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="songs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="song"  maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="optional">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="song">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="duration"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="duration">
+    <xs:simpleType>
+      <xs:restriction base="xs:double">
+        <xs:minInclusive value="0.30"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>
