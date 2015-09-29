@@ -12,6 +12,7 @@
    
    * **Relational (table)** - The relational model was introduced as a way to make database management systems more independent of any particular application. Three key terms are used extensively in relational database models: relations, attributes, and domains.A relation is a table with columns and rows. The named columns of the relation are called attributes, and the domain is the set of values the attributes are allowed to take. The basic data structure of the relational model is the table, where information about a particular entity is represented in rows and columns.
 
+
    ![](Relational_model.png)
 
    * **Object-oriented**
