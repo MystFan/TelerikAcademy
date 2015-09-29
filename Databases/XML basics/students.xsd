@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="students"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:students"
+           xmlns="urn:students"
+           elementFormDefault="qualified">
+
+  <xs:element name="students">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="student" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="sex"/>
+        <xs:element ref="birth-date"/>
+        <xs:element ref="phone"/>
+        <xs:element name="e-mail" type="emailAddress"/>
+        <xs:element ref="course"/>
+        <xs:element ref="specialty"/>
+        <xs:element name="faculty-number" type="faculty-number"/>
+        <xs:element ref="exams"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="sex" type="xs:string"/>
+  <xs:element name="birth-date" type="xs:date"/>
+  <xs:element name="phone" type="xs:string"/>
+  <xs:simpleType name="emailAddress">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^@]+@[^\.]+\..+"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="course" type="xs:string"/>
+  <xs:element name="specialty" type="xs:string"/>
+  <xs:simpleType name="faculty-number">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="exams">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="exam"  maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required">
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="exam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="exam-name"/>
+        <xs:element ref="score"/>
+        <xs:element ref="endorsement"/>
+        <xs:element ref ="enrollment-date"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="enrollment-date" type="xs:date"/>
+  <xs:element name="exam-name" type="xs:string"/>
+  <xs:element name="score" type="xs:double"/>
+  <xs:element name="endorsement" type="xs:boolean"/>
+</xs:schema>

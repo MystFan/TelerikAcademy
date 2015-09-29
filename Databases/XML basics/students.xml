@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet  type="text/xsl"  href="style.xslt"?>
+<students name="Students" xmlns="urn:students" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:students students.xsd">
+  <student>
+    <name>Doncho Minkov</name>
+    <sex>male</sex>
+    <birth-date>1995-03-03</birth-date>
+    <phone>0878787878</phone>
+    <e-mail>DonchoMinkov@gmail.com</e-mail>
+    <course>none</course>
+    <specialty>Javascript Master(Guru)</specialty>
+    <faculty-number>1234567</faculty-number>
+    <exams name="Passed exams">
+      <exam>
+        <exam-name>Javascript Application 2015</exam-name>
+        <score>99.9</score>
+        <endorsement>true</endorsement>
+        <enrollment-date>2015-08-30</enrollment-date>
+      </exam>
+      <exam>
+        <exam-name>C# Part 1</exam-name>
+        <score>88.8</score>
+        <endorsement>true</endorsement>
+        <enrollment-date>2015-01-30</enrollment-date>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Niki Kostov</name>
+    <sex>male</sex>
+    <birth-date>1991-01-02</birth-date>
+    <phone>0876576577</phone>
+    <e-mail>niki@abv.bg</e-mail>
+    <course>JavaScript Basics</course>
+    <specialty>developer</specialty>
+    <faculty-number>6547567</faculty-number>
+    <exams name="Passed exams">
+      <exam>
+        <exam-name>Databases</exam-name>
+        <score>85.5</score>
+        <endorsement>true</endorsement>
+        <enrollment-date>2015-01-30</enrollment-date>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Jhon Doe</name>
+    <sex>male</sex>
+    <birth-date>1989-01-02</birth-date>
+    <phone>0875687878</phone>
+    <e-mail>jhonDoe@abv.bg</e-mail>
+    <course>JavaScriptOOP</course>
+    <specialty>developer</specialty>
+    <faculty-number>1232345</faculty-number>
+    <exams name="Passed exams">
+      <exam>
+        <exam-name>Databases</exam-name>
+        <score>43.5</score>
+        <endorsement>true</endorsement>
+        <enrollment-date>2015-01-30</enrollment-date>
+      </exam>
+    </exams>
+  </student>
+</students>
