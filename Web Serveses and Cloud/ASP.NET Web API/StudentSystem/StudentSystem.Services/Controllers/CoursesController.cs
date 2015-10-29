@@ -1,16 +1,11 @@
-﻿using StudentSystem.Data;
-using StudentSystem.Models;
-using StudentSystem.Services.Models;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-
-namespace StudentSystem.Services.Controllers
+﻿namespace StudentSystem.Services.Controllers
 {
+    using System.Linq;
+    using System.Web.Http;
+    using StudentSystem.Data;
+    using StudentSystem.Models;
+    using StudentSystem.Services.Models;
+
     public class CoursesController : ApiController
     {
         private IStudentSystemData data;

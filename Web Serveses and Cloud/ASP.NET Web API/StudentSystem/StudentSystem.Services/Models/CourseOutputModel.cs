@@ -1,10 +1,7 @@
-﻿using StudentSystem.Models;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace StudentSystem.Services.Models
+﻿namespace StudentSystem.Services.Models
 {
+    using System.Collections.Generic;
+
     public class CourseOutputModel
     {
         public string Name { get; set; }
