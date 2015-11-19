@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnapsackProblem", "KnapsackProblem\KnapsackProblem.csproj", "{35E15D03-622D-4CC7-9C45-E266697FB03B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minimum Edit Distance", "Minimum Edit Distance\Minimum Edit Distance.csproj", "{E1758589-48A9-469D-AEBC-759000DF2FE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tribonacci", "Tribonacci\Tribonacci.csproj", "{57CF59DA-786E-426A-A5C8-B2E5C6CCEBD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guitar", "Guitar\Guitar.csproj", "{310D22DF-C0A9-44CC-9BBB-01486B86DD04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameOfLife", "GameOfLife\GameOfLife.csproj", "{45C5EFF8-AC6F-489F-850F-662393728C35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35E15D03-622D-4CC7-9C45-E266697FB03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E15D03-622D-4CC7-9C45-E266697FB03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E15D03-622D-4CC7-9C45-E266697FB03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E15D03-622D-4CC7-9C45-E266697FB03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1758589-48A9-469D-AEBC-759000DF2FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1758589-48A9-469D-AEBC-759000DF2FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1758589-48A9-469D-AEBC-759000DF2FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1758589-48A9-469D-AEBC-759000DF2FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57CF59DA-786E-426A-A5C8-B2E5C6CCEBD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57CF59DA-786E-426A-A5C8-B2E5C6CCEBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57CF59DA-786E-426A-A5C8-B2E5C6CCEBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57CF59DA-786E-426A-A5C8-B2E5C6CCEBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310D22DF-C0A9-44CC-9BBB-01486B86DD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310D22DF-C0A9-44CC-9BBB-01486B86DD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310D22DF-C0A9-44CC-9BBB-01486B86DD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310D22DF-C0A9-44CC-9BBB-01486B86DD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C5EFF8-AC6F-489F-850F-662393728C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C5EFF8-AC6F-489F-850F-662393728C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C5EFF8-AC6F-489F-850F-662393728C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C5EFF8-AC6F-489F-850F-662393728C35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
