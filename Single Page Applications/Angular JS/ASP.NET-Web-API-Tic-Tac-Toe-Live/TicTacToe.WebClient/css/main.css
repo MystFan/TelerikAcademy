@@ -1,0 +1,33 @@
+﻿body {
+    margin-top:60px;
+}
+
+.error{
+    color: deeppink;
+}
+
+.image-container img{
+    width:100%;
+}
+
+ul{
+    list-style-type: none;
+}
+.board{
+    margin:0;
+    padding:0;
+    text-align:center;
+    display:inline-block;
+    width:180px;
+    height:200px;
+}
+.board-cell{
+    margin:0;
+    font-size: 2.4em;
+    display: inline-block;
+    width:50px;
+    border: 1px solid black;
+    margin-left: -2px;
+    padding: 5px;
+    cursor:pointer;
+}

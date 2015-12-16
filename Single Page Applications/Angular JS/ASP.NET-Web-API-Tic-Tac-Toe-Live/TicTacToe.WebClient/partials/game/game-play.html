@@ -1,0 +1,29 @@
+﻿<div class="row">
+    <div class="col-md-4 text-center">
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+                <h2 class="panel-title">Game board</h2>
+            </div>
+            <div class="panel-body">
+                <div class="board">
+                    <div ng-repeat="item in board track by $index" class="board-cell" ng-click="save(item.cord)">{{ item.symbol }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+                <h3 class="panel-title">Game details</h3>
+            </div>
+            <div class="panel-body">
+                <ul>
+                    <li><strong>First player: </strong> {{ currentGame.firstPlayerName }}</li>
+                    <li><strong>Second player: </strong> {{ currentGame.secondPlayerName }}</li>
+                    <li><strong>Game State: </strong> {{ currentGame.state }}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

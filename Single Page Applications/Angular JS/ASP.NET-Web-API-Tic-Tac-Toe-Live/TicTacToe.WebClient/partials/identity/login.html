@@ -1,0 +1,26 @@
+﻿<div class="row">
+    <div class="col-md-6 col-lg-offset-3"></div>
+</div>
+<form class="form-horizontal" name="loginForm">
+    <div class="text-center error" ng-show="loginForm.$invalid && loginForm.$dirty">Form is not valid</div>
+    <fieldset>
+        <legend>Login</legend>
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+                <input class="form-control" ng-model="user.username" required="required" id="inputEmail" placeholder="Email" type="text">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+            <div class="col-lg-10">
+                <input class="form-control" ng-model="user.password" required="required" id="inputPassword" placeholder="Password" type="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button class="btn btn-primary" ng-disabled="loginForm.$invalid" ng-click="login(user, loginForm)">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

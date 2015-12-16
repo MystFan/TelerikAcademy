@@ -1,0 +1,32 @@
+﻿<div class="row">
+    <div class="col-md-6 col-lg-offset-3"></div>
+</div>
+<form class="form-horizontal" name="registerForm">
+    <div class="text-center error" ng-show="registerForm.$invalid && registerForm.$dirty">Form is not valid</div>
+    <fieldset>
+        <legend>Reigister User</legend>
+        <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+                <input class="form-control" ng-model="user.email" required="required" id="inputEmail" placeholder="Email" type="text">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+            <div class="col-lg-10">
+                <input class="form-control" ng-model="user.password" required="required" id="inputPassword" placeholder="Password" type="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword" class="col-lg-2 control-label">Confirm Password</label>
+            <div class="col-lg-10">
+                <input class="form-control" ng-model="user.confirmPassword" required="required" id="confirmPassword" placeholder="Confirm Password" type="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button class="btn btn-primary" ng-disabled="registerForm.$invalid || (user.password !== user.confirmPassword)" ng-click="register(user, registerForm)">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

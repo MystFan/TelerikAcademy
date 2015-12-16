@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="utf-8" />
+    <base href="/">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/toastr.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+<body ng-app="tic-tac-toe" ng-controller="MainController">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Tic Tac Toe</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li><a href="/home">Home</a></li>
+                    <!--<li  ng-if="globalSetCurrentUser"><a href="/game/create">Add</a></li>-->
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" ng-if="!globalSetCurrentUser">
+                    <li><a href="/identity/register">Register</a></li>
+                    <li><a href="/identity/login">Login</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right" ng-if="globalSetCurrentUser">
+                    <li><a href="/identity/profile">{{ globalSetCurrentUser.Email }}</a></li>
+                    <li><a href="#" ng-click="logout()">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" ng-view>
+    </div>
+
+
+    <footer>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/toastr.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-cookies.js"></script>
+    <script src="scripts/app/app.js"></script>
+    <script src="scripts/app/identity/register-controller.js"></script>
+    <script src="scripts/app/identity/login-controller.js"></script>
+    <script src="scripts/app/controllers/main-controller.js"></script>
+    <script src="scripts/app/controllers/home-controller.js"></script>
+    <script src="scripts/app/controllers/profile-controller.js"></script>
+    <script src="scripts/app/controllers/games-details-controller.js"></script>
+    <script src="scripts/app/controllers/game-play-controller.js"></script>
+    <script src="scripts/app/services/games-service.js"></script>
+    <script src="scripts/app/services/notifier.js"></script>
+    <script src="scripts/app/identity/auth-service.js"></script>
+    <script src="scripts/app/identity/identity-service.js"></script>
+    <script src="scripts/app/directives.js"></script>
+</body>
+</html>
