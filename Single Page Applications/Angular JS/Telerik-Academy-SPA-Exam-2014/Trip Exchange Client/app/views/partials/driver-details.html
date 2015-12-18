@@ -1,0 +1,40 @@
+<div ng-if="userAuth" class="container text-center">
+	<div class="row">
+		<h1>{{ driver.name }}</h1></div>
+	<div class="row">
+		<div class="col-md-3">
+			<strong>Upcomming trips: </strong>{{ driver.numberOfUpcomingTrips }}
+		</div>
+		<div class="col-md-3">
+			<strong>Total trips: </strong>{{ driver.numberOfTotalTrips }}
+		</div>
+		<div class="col-md-3">
+			<input type="checkbox" ng-model="mine" id="mine" ng-change="getMineTrips(mine)" />
+			<label for="mine">Only mine trips</label>
+			<input type="checkbox" id="driver"/>
+			<label for="driver">Only driver trips</label>
+		</div>
+		<div class="col-md-3">
+			<select ng-model="sortTrips">
+				<option value="none">None</option>
+				<option value="from">From</option>
+				<option value="to">To</option>
+				<option value="departureDate">Departure Time</option>
+			</select>
+		</div>
+	</div>
+	<table class="table table-hover table-bordered">
+		<tr>
+			<th>Driver</th>
+			<th>From</th>
+			<th>To</th>
+			<th>Departure Time</th>
+		</tr>
+		<tr ng-repeat="trip in driver.trips | orderBy: sortTrips">
+			<td> <a href="#/driver-details/{{ trip.driverId }}">{{ trip.driverName }}</a></td>
+			<td>{{ trip.from}}</td>
+			<td>{{ trip.to }}</td>
+			<td>{{ trip.departureDate }}</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,29 @@
+<h1 class="text-center">Drivers</h1>
+<div ng-if="!userAuth" class="container text-center">
+	<table class="table table-hover table-bordered">
+		<tr>
+			<th>Name</th>
+			<th>Upcomming Trips</th>
+			<th>Total Trips</th>
+		</tr>
+		<tr ng-repeat="driver in drivers">
+			<td>{{ driver.name }}</td>
+			<td>{{ driver.numberOfUpcomingTrips }}</td>
+			<td>{{ driver.numberOfTotalTrips }}</td>
+		</tr>
+	</table>
+</div>
+<div ng-if="userAuth" class="container text-center">
+	<table class="table table-hover table-bordered">
+		<tr>
+			<th>Name</th>
+			<th>Upcomming Trips</th>
+			<th>Total Trips</th>
+		</tr>
+		<tr ng-repeat="driver in drivers">
+			<td> <a href="#/driver-details/{{ driver.id }}">{{ driver.name }}</a></td>
+			<td>{{ driver.numberOfUpcomingTrips }}</td>
+			<td>{{ driver.numberOfTotalTrips }}</td>
+		</tr>
+	</table>
+</div>

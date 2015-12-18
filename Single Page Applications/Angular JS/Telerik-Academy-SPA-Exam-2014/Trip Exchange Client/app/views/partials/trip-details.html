@@ -1,0 +1,22 @@
+<div class="container" ng-if="userAuth">
+	<div class="row">
+		<div class="col-md-10">
+			<h1>{{ trip.driverName }}</h1>
+		</div>
+		<div class="col-md-2">
+			<button ng-click="joinTrip()" class="btn btn-primary">Join Trip</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p>From: <strong>{{ trip.from }}</strong></p>
+		</div>
+		<div class="col-md-4">
+			<p>To: <strong>{{ trip.to }}</strong></p>
+		</div>
+		<div class="col-md-4">
+			<p>Number of seats: <strong>{{ trip.numberOfFreeSeats }}</strong></p>
+		</div>
+	</div>
+	<p class="text-center">Passenegers: <strong>{{ trip.passengers }}</strong></p>
+</div>

@@ -1,0 +1,94 @@
+<div class="container text-center">
+	<div class="row">
+		<div class="col-md-8">
+			<h1>Trips</h1></div>
+		<div ng-if="userAuth" class="col-md-4">
+			<a href="#/trips-create" class="btn btn-primary">Create</a>
+		</div>
+	</div>
+	<div class="row" ng-if="userAuth">
+		<div class="form-group col-md-3">
+			<p>Sort</p>
+			<select class="form-control" ng-model="sortTrip">
+				<option value="none">None</option>
+				<option value="from">From</option>
+				<option value="to">To</option>
+				<option value="departureDate">Departure Time</option>
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<p>Order</p>
+			<select class="form-control">
+				<option>Ascending</option>
+				<option>Descending</option>
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<p>From</p>
+			<select class="form-control">
+				<option ng-repeat="city in cities" value="{{ city }}">{{ city }}</option>
+			</select>
+		</div>
+		<div class="form-group col-md-3">
+			<p>To</p>
+			<select class="form-control">
+				<option ng-repeat="city in cities" value="{{ city }}">{{ city }}</option>
+			</select>
+		</div>
+	</div>
+	<div class="row" ng-if="userAuth">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label for="finished">Include finished</label>
+				<input type="checkbox" class="form-control" id="finished">
+			</div>
+			<div class="form-group">
+				<label for="Mine">Only mine</label>
+				<input type="checkbox" class="form-control" id="Mine">
+			</div>
+			<button type="submit" class="btn btn-primary">Filter</button>
+		</div>
+		<div class="col-md-6">
+			<button class="btn btn-primary" ng-disabled="currentPage == 1" ng-click="prevPage()">
+				<<</button>
+					<input type="text" class="text-center" value="{{currentPage}}" />
+					<button class="btn btn-primary" ng-disabled="!trips.length" ng-click="nextPage()">>></button>
+		</div>
+	</div>
+	<table ng-if="userAuth" class="table table-hover table-bordered">
+		<tr>
+			<th>Driver</th>
+			<th>From</th>
+			<th>To</th>
+			<th>Departure Time</th>
+			<th ng-if="userAuth">Is Mine</th>
+			<th>Join trip</th>
+		</tr>
+		<tr ng-repeat="trip in trips">
+			<td><a href="#/trip-details/{{ trip.id }}">{{ trip.driverName }}</a></td>
+			<td>{{ trip.from }}</td>
+			<td>{{ trip.to }}</td>
+			<td><a href="#/trip-details/{{ trip.id }}">{{ trip.departureDate }}</a></td>
+			<td ng-if="userAuth">
+				<img class="check-element animate-show" ng-show="{{ trip.isMine }}" src="img/102.png" alt="my trip">
+				<img class="check-element animate-show" ng-hide="{{ trip.isMine }}" src="img/101.png" alt="not my trip">
+			</td>
+			<td><a class="btn btn-primary" href="#/trip-details/{{ trip.id }}">Join</a></td>
+		</tr>
+	</table>
+	<table ng-if="!userAuth" class="table table-hover table-bordered">
+		<tr>
+			<th>Driver</th>
+			<th>From</th>
+			<th>To</th>
+			<th>Departure Time</th>
+			<th ng-if="userAuth">Is Mine</th>
+		</tr>
+		<tr ng-repeat="trip in trips | orderBy: sortTrip">
+			<td>{{ trip.driverName }}</td>
+			<td>{{ trip.from }}</td>
+			<td>{{ trip.to }}</td>
+			<td>{{ trip.departureDate }}</td>
+		</tr>
+	</table>
+</div>

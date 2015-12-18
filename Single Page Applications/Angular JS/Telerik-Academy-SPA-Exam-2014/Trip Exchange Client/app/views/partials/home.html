@@ -1,0 +1,64 @@
+<div class="jumbotron text-center">
+	<h1>Welcome to Trip Exchange</h1>
+	<h3> Find your way home!</h3>
+</div>
+<div class="container row">
+	<div class="col-md-3 text-center">
+		<p>Trips</p>
+		<p>{{ statistic.trips }}</p>
+	</div>
+	<div class="col-md-3 text-center">
+		<p>Finished trips</p>
+		<p>{{ statistic.finishedTrips }}</p>
+	</div>
+	<div class="col-md-3 text-center">
+		<p>Users</p>
+		<p>{{ statistic.users }}</p>
+	</div>
+	<div class="col-md-3 text-center">
+		<p>Drivers</p>
+		<p>{{ statistic.drivers }}</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading text-center">Latest trips</div>
+			<div class="panel-body">
+				<table class="table table-hover table-bordered">
+					<tr>
+						<th>Driver</th>
+						<th>From</th>
+						<th>To</th>
+						<th>Departure Time</th>
+					</tr>
+					<tr ng-repeat="trip in trips">
+						<td><a href="#/drivers">{{ trip.driverName }}</a></td>
+						<td>{{ trip.from }}</td>
+						<td>{{ trip.to }}</td>
+						<td>{{ trip.departureDate }}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading text-center">Latest drivers</div>
+			<div class="panel-body">
+				<table class="table table-hover table-bordered">
+					<tr>
+						<th>Name</th>
+						<th>Upcoming Trips</th>
+						<th>Total trips</th>
+					</tr>
+					<tr ng-repeat="driver in drivers">
+						<td><a href="#/drivers">{{ driver.name }}</a></td>
+						<td>{{ driver.numberOfUpcomingTrips }}</td>
+						<td>{{ driver.numberOfTotalTrips }}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
