@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File Upload System</title>
+    <link rel="stylesheet" href="server/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">UploadSystem</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li><a href="/upload">Upload</a></li>
+                    <li><a href="/files">Files</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-md-3 col-md-3 col-sm-4">
+            <div class="list-group table-of-contents text-center">
+                {{#if files}}
+                {{#each files}}
+                <strong>{{this.name}}</strong>
+                <a class="list-group-item" href="download?id={{this.guid}}">Download</a> 
+                {{/each}}
+                {{else}}
+                    <h1>No upload files</h1>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text-center">&copy; Telerik Academy 2016</p>
+    </footer>
+    <script src="server/libs/jquery.min.js"></script>
+    <script src="server/libs/bootstrap.min.js"></script>
+</body>
+
+</html>
