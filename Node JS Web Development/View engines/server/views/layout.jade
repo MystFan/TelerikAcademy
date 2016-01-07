@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title File Upload System
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+  body
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/') Home
+        #bs-example-navbar-collapse-2.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            each page in pages
+                li
+                    a(href='/' + page) !{page}
+    footer
+      p.text-center © Telerik Academy 2016
+    script(src='libs/jquery.min.js')
+    script(src='libs/bootstrap.min.js')
