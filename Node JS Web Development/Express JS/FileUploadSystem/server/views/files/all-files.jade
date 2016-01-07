@@ -1,0 +1,26 @@
+extends ../layouts/layout
+block page-css
+    link(rel="stylesheet" href="/css/files.css")
+block main-content
+    .main
+        if(files.length)
+            table
+                thead
+                    tr
+                        th #
+                        th file name
+                        th date
+                        th download
+                tbody
+                    each file, index in files
+                        if(!file.isPrivate)
+                            tr
+                                td=  index + 1
+                                td  #{file.filename}
+                                td  #{prettyDate(file.uploadDate)}
+                                td
+                                    a.btn-download(href="/download?fileId=#{file._id}")
+                                        | download
+        else
+            h1 
+                | No public files

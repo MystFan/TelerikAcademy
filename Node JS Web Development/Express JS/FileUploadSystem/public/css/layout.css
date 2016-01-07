@@ -1,0 +1,35 @@
+body div#cssmenu {
+  width: 960px;
+  font-family: Verdana Geneva 'DejaVu Sans' sans-serif;
+  font-size: 14px;
+  margin: 20px 7px;
+}
+body div#cssmenu ul {
+  list-style-type: none;
+  background-color: #cfcfcf;
+  border-bottom: 5px solid #0079b2;
+}
+body div#cssmenu ul li {
+  height: 20px;
+  background-color: #0079b2;
+  margin-top: -18px;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  padding: 10px 5px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: #5d6e66;
+  font-weight: bold;
+}
+body div#cssmenu ul li a {
+  color: #fff;
+}
+body div#cssmenu ul li a:hover {
+  background-color: #0079b2;
+}
+body footer {
+  text-align: center;
+  padding: 10px;
+}

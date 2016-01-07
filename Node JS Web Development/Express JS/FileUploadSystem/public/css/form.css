@@ -1,0 +1,19 @@
+div form fieldset {
+  width: 30%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 24px;
+}
+div form fieldset legend {
+  font-weight: bold;
+}
+div form fieldset div {
+  padding: 5px;
+}
+div form fieldset div div input {
+  border-radius: 3px;
+  padding: 5px;
+}
+div form fieldset div div #submit {
+  padding: 5px;
+}

@@ -1,0 +1,20 @@
+extends ../layouts/layout
+block page-css
+    link(rel="stylesheet" href="/css/form.css")
+block main-content
+    div
+        div
+            form(method='post')
+                fieldset
+                    legend Login
+                    div
+                        label(for='username') Username
+                        div
+                            input#username(name='username' placeholder='Username' type='text')
+                    div
+                        label(for='password') Password
+                        div
+                            input#password.form-control(name='password' placeholder='Password' type='password')
+                    div
+                        div
+                            input#submit(value='Submit' type='submit')

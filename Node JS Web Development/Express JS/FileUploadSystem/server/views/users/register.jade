@@ -1,0 +1,24 @@
+extends ../layouts/layout
+block page-css
+    link(rel="stylesheet" href="/css/form.css")
+block main-content
+    div
+        form(method='post')
+            fieldset
+                legend Register
+                div
+                    label(for='username') Username
+                    div
+                        input#username(name='username' placeholder='Username' type='text')
+                div
+                    label(for='password') Password
+                    div
+                        input#password(name='password' placeholder='Password' type='password')
+                        
+                div
+                    label(for='confirmPassword') Confirm Password
+                    div
+                        input#password(name='confirmPassword' placeholder='Confirm Password' type='password')
+                div
+                    div
+                        input#submit(value='Submit' type='submit')

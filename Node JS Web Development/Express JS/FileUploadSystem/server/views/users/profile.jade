@@ -1,0 +1,23 @@
+extends ../layouts/layout
+block page-css
+    link(rel="stylesheet" href="/css/profile.css")
+block main-content
+    div.main
+        each file, index in files
+            div.file-info
+                ul  
+                    li
+                        strong
+                            | filename: 
+                     | #{file.filename}
+                    li
+                        a.btn-download(href="/download?fileId=#{file._id}")
+                            | download
+                    if(file.isPrivate)
+                        li
+                            strong private
+                    else
+                        li
+                            strong public
+                        
+                

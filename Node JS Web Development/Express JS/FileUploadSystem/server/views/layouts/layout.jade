@@ -1,0 +1,37 @@
+doctype
+html
+    head
+        title File Upload System
+        link(rel="stylesheet" href="/css/layout.css")
+        link(rel="stylesheet" href="/css/site.css")
+        include css
+    body
+        #cssmenu
+            ul
+                li
+                    a(href="/") Home
+                if(currentUser)
+                    li
+                        a(href="/all-files") Files
+                    li
+                        a(href="/upload") Upload
+                    li
+                        a(href="/profile") #{currentUser.username}
+                    li
+                     a(href="/logout") Logout
+                else
+                    li
+                        a(href="/register") Register
+                    li
+                        a(href="/login") Login
+                        
+        div
+            if(errorMessage)
+                div
+                    | #{errorMessage}
+                            
+            block main-content
+              
+        footer
+            p
+                | &copy; Telerik Academy 2016

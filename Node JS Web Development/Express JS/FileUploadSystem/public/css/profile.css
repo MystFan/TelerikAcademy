@@ -1,0 +1,26 @@
+.main {
+  padding: 20px 30px 20px 30px;
+  border: 1px;
+}
+.main h1 {
+  text-align: center;
+}
+.main .file-info {
+  padding: 5px;
+  background-color: #e8ffff;
+}
+.main .file-info ul {
+  list-style-type: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 0;
+}
+.main .file-info ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.main .file-info ul .btn-download {
+  background-color: #5cb85c;
+  padding: 7px;
+  border-radius: 5px;
+}
