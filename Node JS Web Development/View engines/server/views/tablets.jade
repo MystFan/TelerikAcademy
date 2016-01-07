@@ -1,0 +1,42 @@
+extends layout
+block tablets-page
+    .row.container
+        each tablet in tablets
+            .col-md-4
+                .panel.panel-success
+                    .panel-heading
+                        h3.panel-title 
+                            | #{tablet.manufacturer}  #{tablet.model}
+                    .panel-body
+                        div
+                            strong
+                                | Display: 
+                            span
+                                | "#{tablet.displaySize}"
+                        div        
+                            strong
+                                | Camera: 
+                            span
+                                | "#{tablet.camera}"
+                        div        
+                            strong
+                                | Operation System: 
+                            span
+                                | "#{tablet.os}"
+                        div        
+                            strong
+                                | Wi-Fi: 
+                            span
+                                | "#{tablet['wi-fi']}"
+                        div        
+                            strong
+                                | GPS: 
+                            span
+                                | "#{tablet.gps}" 
+                         div        
+                            strong
+                                | Battery: 
+                            span
+                                | "#{tablet.battery}" 
+                        div.image-container
+                            img(src="#{tablet.img}")

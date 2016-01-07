@@ -1,0 +1,52 @@
+extends layout
+block smart-phones-page
+    .row.container
+        each smartPhone in smartPhones
+            .col-md-4
+                .panel.panel-success
+                    .panel-heading
+                        h3.panel-title 
+                            | #{smartPhone.manufacturer}  #{smartPhone.model}
+                    .panel-body
+                        div
+                            strong
+                                | Display: 
+                            span
+                                | "#{smartPhone.displaySize}"
+                        div        
+                            strong
+                                | Camera: 
+                            span
+                                | "#{smartPhone.camera}"
+                        div        
+                            strong
+                                | Operation System: 
+                            span
+                                | "#{smartPhone.os}"
+                        div        
+                            strong
+                                | Wi-Fi: 
+                            span
+                                | "#{smartPhone.connectivity['wi-fi']}"
+                        div        
+                            strong
+                                | GPS: 
+                            span
+                                | "#{smartPhone.connectivity.gps}" 
+                        div        
+                            strong
+                                | Radio: 
+                            span
+                                | "#{smartPhone.connectivity.fm}" 
+                        div        
+                            strong
+                                | 3G: 
+                            span
+                                | "#{smartPhone.connectivity['3g']}" 
+                        div        
+                            strong
+                                | 4G: 
+                            span
+                                | "#{smartPhone.connectivity['4g']}"
+                        div.image-container
+                            img(src="#{smartPhone.img}")                                                                              

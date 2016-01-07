@@ -1,8 +1,9 @@
 doctype html
 html
   head
-    title File Upload System
+    title Mobile Devices
     link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/site.css')
   body
     nav.navbar.navbar-inverse
       .container-fluid
@@ -12,7 +13,12 @@ html
           ul.nav.navbar-nav
             each page in pages
                 li
-                    a(href='/' + page) !{page}
+                    a(href='/' + page) #{page}
+                    
+    block home-page
+    block smart-phones-page
+    block tablets-page
+    block wearables-page
     footer
       p.text-center © Telerik Academy 2016
     script(src='libs/jquery.min.js')

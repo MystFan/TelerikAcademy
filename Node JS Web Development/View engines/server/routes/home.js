@@ -1,7 +1,6 @@
 'use strict';
-let pages = ['Smart phones', 'Tablets', 'Wearables'];
+let pages = ['Smartphones', 'Tablets', 'Wearables'];
 
 module.exports = function(req, res){
-    console.log('index');
-    res.render('layout', {pages: pages});
+    res.render('home', {pages: pages});
 }

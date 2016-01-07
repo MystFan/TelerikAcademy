@@ -1,0 +1,49 @@
+{
+    "smartphones": [
+        {
+            "manufacturer": "Samsung",
+            "model": "Galaxy S6",
+            "displaySize": 5.7,
+            "camera": "5.0MP",
+            "os": "Android™ 5.1.1 Lollipop",
+            "img": "imgs/samsung-galaxy-6.jpg",
+            "connectivity": {
+                "wi-fi": "Yes",
+                "gps": "Yes",
+                "fm": "No",
+                "3g": "Yes",
+                "4g": "Yes"
+            }
+        },
+        {
+            "manufacturer": "Apple",
+            "model": "IPhone 6 Plus",
+            "displaySize": 5.5,
+            "camera": "8.0MP",
+            "os": "IOS 8.0",
+            "img": "imgs/iphone-6-plus.jpg",
+            "connectivity": {
+                "wi-fi": "Yes",
+                "gps": "Yes",
+                "fm": "No",
+                "3g": "Yes",
+                "4g": "Yes"
+            }
+        },
+        {
+            "manufacturer": "Sony",
+            "model": "Xperia M4 Aqua",
+            "displaySize": 5.0,
+            "camera": "13.0MP",
+            "os": "Android™ 5.1.1 Lollipop",
+            "img": "imgs/sony-xperia-aqua.jpg",
+            "connectivity": {
+                "wi-fi": "Yes",
+                "gps": "Yes",
+                "fm": "Yes",
+                "3g": "Yes",
+                "4g": "Yes"
+            }
+        }
+    ]
+}

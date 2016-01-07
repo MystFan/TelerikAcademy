@@ -1,4 +1,7 @@
 module.exports = {
-    index: require('./home')
+    home: require('./home'),
+    smartPhones: require('./smartPhones'),
+    tablets: require('./tablets'),
+    wearables: require('./wearables')
 }
 

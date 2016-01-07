@@ -1,0 +1,17 @@
+extends layout
+block wearables-page
+    .row.container
+        each wearable in wearables
+            .col-md-12
+                .panel.panel-success
+                    .panel-heading
+                        h3.panel-title 
+                            | #{wearable.manufacturer}  #{wearable.model}
+                    .panel-body
+                        .row
+                            .col-md-6
+                                span
+                                    | "#{wearable.info}"
+                            .col-md-6
+                                div.image-container
+                                    img(src="#{wearable.img}")
