@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHandler", "WebHandler\WebHandler.csproj", "{18CADD57-91DD-47F3-A159-6DD4B57CC03B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sumator", "Sumator\Sumator.csproj", "{2A83046A-7FFE-4088-B3EC-BF2317666F9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18CADD57-91DD-47F3-A159-6DD4B57CC03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CADD57-91DD-47F3-A159-6DD4B57CC03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CADD57-91DD-47F3-A159-6DD4B57CC03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CADD57-91DD-47F3-A159-6DD4B57CC03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A83046A-7FFE-4088-B3EC-BF2317666F9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A83046A-7FFE-4088-B3EC-BF2317666F9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A83046A-7FFE-4088-B3EC-BF2317666F9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A83046A-7FFE-4088-B3EC-BF2317666F9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
