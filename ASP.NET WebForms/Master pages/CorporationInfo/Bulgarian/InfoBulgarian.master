@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Corporation.Master"
+    AutoEventWireup="true" CodeBehind="InfoBulgarian.master.cs"
+    Inherits="CorporationInfo.Bulgarian.InfoBulgarian" %>
+
+<asp:Content ID="ContentBulgarianHead" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBulgarianHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="ContentBulgarian" ContentPlaceHolderID="ContentPlaceHolderMain" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderBulgarianMain" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

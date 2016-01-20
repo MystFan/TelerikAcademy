@@ -1,0 +1,30 @@
+﻿body {
+}
+header,footer{
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:aqua;
+}
+aside{
+    width:20%;
+    height:50%;
+    display:inline-block;
+    background-color:#4cff00;
+}
+section{
+    display:inline-block;
+    background-color:azure;
+    width:78%;
+    height:50%;
+}
+
+ul{
+    list-style-type:none;
+}
+.title{
+    text-align:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#myMenu{
+    text-align:center;
+}

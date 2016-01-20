@@ -1,0 +1,8 @@
+﻿fieldset {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+fieldset div{
+    margin:5px;
+}

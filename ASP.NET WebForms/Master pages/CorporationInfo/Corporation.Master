@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Corporation.master.cs" Inherits="CorporationInfo.Corporation" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Corporation</title>
+    <link href="CorpStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formCorporation" runat="server">
+        <header id="header">
+            <h1>My Corporation</h1>
+        </header>
+
+        <section id="main-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+
+        <footer id="footer">
+            (c) 2014 by MyPlace Corp.
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyPlace.master.cs" Inherits="SimpleProfiler.MyPlace" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Profile</title>
+    <link href="MyPlaceStyle.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="FormMyPlace" runat="server">
+        <header id="header">
+            <h1>My Place</h1>
+        </header>
+        <aside id="sidebar">
+            <div class="sidebar-title">My Profile Menu</div>
+            <ul id="myMenu">
+                <li><a href="~/" runat="server">Home</a></li>
+                <li><a href="~/Profile.aspx" runat="server">Profile</a></li>
+                <li><a href="~/Friends.aspx" runat="server">Friends</a></li>
+                <li><a href="~/AdditionalInfo.aspx" runat="server">Additional Info</a></li>
+            </ul>
+        </aside>
+        <section id="main-content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+        <footer id="footer">
+            (c) 2016 by MyPlace Corp.
+        </footer>
+    </form>
+</body>
+</html>
