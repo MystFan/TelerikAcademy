@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Customers>
+  <Customer CustomerId="1" Name="Ivo">
+    <Orders>
+      <Order OrderId="1" ShipDate="06-09-2011">
+        <OrderItems>
+          <OrderItem OrderItemId="1" PartNumber="123" PartDesc="Large" Quantity="5" Price="22.00"></OrderItem>
+          <OrderItem OrderItemId="2" PartNumber="1234" PartDesc="Small" Quantity="6" Price="99.00"></OrderItem>
+        </OrderItems>
+      </Order>
+      <Order OrderId="2" ShipDate="09-12-2011">
+        <OrderItems>
+          <OrderItem OrderItemId="3" PartNumber="153" PartDesc="Medium" Quantity="7" Price="232.00"></OrderItem>
+          <OrderItem OrderItemId="4" PartNumber="1236" PartDesc="Half" Quantity="8" Price="299.00"></OrderItem>
+        </OrderItems>
+      </Order>
+    </Orders>
+    <Invoices>
+      <Invoice InvoiceId="5" Amount="99.23" />
+      <Invoice InvoiceId="6" Amount="88.89" />
+    </Invoices>
+  </Customer>
+  <Customer CustomerId="1" Name="Doncho">
+    <Orders>
+      <Order OrderId="1" ShipDate="06-09-2011">
+        <OrderItems>
+          <OrderItem OrderItemId="1" PartNumber="123" PartDesc="Large" Quantity="5" Price="22.00"></OrderItem>
+          <OrderItem OrderItemId="2" PartNumber="1234" PartDesc="Small" Quantity="6" Price="99.00"></OrderItem>
+        </OrderItems>
+      </Order>
+      <Order OrderId="2" ShipDate="09-12-2011">
+        <OrderItems>
+          <OrderItem OrderItemId="3" PartNumber="153" PartDesc="Medium" Quantity="7" Price="232.00"></OrderItem>
+          <OrderItem OrderItemId="4" PartNumber="1236" PartDesc="Half" Quantity="8" Price="299.00"></OrderItem>
+        </OrderItems>
+      </Order>
+    </Orders>
+    <Invoices>
+      <Invoice InvoiceId="5" Amount="99.23" />
+      <Invoice InvoiceId="6" Amount="88.89" />
+    </Invoices>
+  </Customer>
+  <Customer CustomerId="2" Name="Neha">
+    <Orders>
+      <Order OrderId="3" ShipDate="08-09-2011">
+        <OrderItems>
+          <OrderItem OrderItemId="11" PartNumber="1223" PartDesc="Large" Quantity="52" Price="22.00"></OrderItem>
+          <OrderItem OrderItemId="22" PartNumber="12134" PartDesc="Small" Quantity="62" Price="99.00"></OrderItem>
+        </OrderItems>
+      </Order>
+      <Order OrderId="4" ShipDate="09-12-2011">
+        <OrderItems>
+          <OrderItem OrderItemId="33" PartNumber="153" PartDesc="Medium" Quantity="57" Price="232.00"></OrderItem>
+          <OrderItem OrderItemId="44" PartNumber="1236" PartDesc="Half" Quantity="89" Price="299.00"></OrderItem>
+        </OrderItems>
+      </Order>
+    </Orders>
+    <Invoices>
+      <Invoice InvoiceId="7" Amount="99.23" />
+      <Invoice InvoiceId="8" Amount="88.89" />
+    </Invoices>
+  </Customer>
+</Customers>
