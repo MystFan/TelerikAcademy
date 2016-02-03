@@ -1,0 +1,25 @@
+﻿@model IEnumerable<InformationalApplication.Models.Category>
+@{
+    ViewBag.Title = "Categories";
+}
+
+<h2>Admin categories</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Category Name</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var categorie in Model)
+    {
+        <tr>
+            <td>@categorie.Name</td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", "AdminCategories", new { categoryId = categorie.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+</table>
+
+@Html.ActionLink("Create", "Create", "AdminCategories", new { Area = "Administration" }, new { @class = "btn btn-success" })
+

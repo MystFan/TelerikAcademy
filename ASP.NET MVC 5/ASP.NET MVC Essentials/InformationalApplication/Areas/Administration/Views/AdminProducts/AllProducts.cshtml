@@ -1,0 +1,25 @@
+﻿@model IEnumerable<InformationalApplication.Models.Product>
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Admin products</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Product name</th>
+        <th>Category</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.Name</td>
+            <td>@product.Category.Name</td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", "AdminProducts", new { productId = product.Id}, new { @class = "btn btn-danger"})
+            </td>
+        </tr>
+    }
+</table>
+

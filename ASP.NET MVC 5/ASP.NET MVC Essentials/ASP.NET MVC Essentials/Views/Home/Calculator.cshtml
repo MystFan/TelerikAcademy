@@ -1,0 +1,89 @@
+﻿@model Dictionary<string, string>
+@{
+    ViewBag.Title = "Calculator";
+}
+
+<div class="jumbotron">
+    <h1>Bit Calculator</h1>
+    <p>
+        2.Using ASP.NET MVC write the same web calculator as: <a href="http://www.gwebtools.com/bit-calculator">http://www.gwebtools.com/bit-calculator</a> 
+    </p>
+    <form class="form-horizontal" method="post" action="/Home/Calculator">
+        <fieldset>
+            <legend>Calculator</legend>
+            <div class="form-group">
+                <label for="inputQuantity" class="col-lg-2 control-label">Quantity</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputQuantity" placeholder="Quantity" name="quantity" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="selectType" class="col-lg-2 control-label">Type</label>
+                <div class="col-lg-10">
+                    <select class="form-control" id="selectType" name="type">
+                        <option>bit - b</option>
+                        <option>Byte - B</option>
+                        <option>Kilobit - Kb</option>
+                        <option>Kilobyte - KB</option>
+                        <option>Megabit - Mb</option>
+                        <option>Megabyte - MB</option>
+                        <option>Gigabit - Gb</option>
+                        <option>Gigabyte - GB</option>
+                        <option>Terabit - Tb</option>
+                        <option>Terabyte - TB</option>
+                        <option>Petabit - Pb</option>
+                        <option>Petabyte - PB</option>
+                        <option>Exabit - Eb</option>
+                        <option>Exabyte - EB</option>
+                        <option>Zettabit - Zb</option>
+                        <option>Zettabyte - ZB</option>
+                        <option>Yottabit - Yb</option>
+                        <option>Yottabyte - YB</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="selectKilo" class="col-lg-2 control-label">Kilo</label>
+                <div class="col-lg-10">
+                    <select class="form-control" id="selectKilo" name="kilo">
+                        <option>1000</option>
+                        <option>1024</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-primary">GO</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    @if (Model.Any())
+    {
+        <table class="table table-striped table-hover ">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th colspan="2">Storage (Kilo = 1024 bits)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Key</td>
+                        <td>@item.Value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h4>No Result</h4>
+    }
+
+</div>
+

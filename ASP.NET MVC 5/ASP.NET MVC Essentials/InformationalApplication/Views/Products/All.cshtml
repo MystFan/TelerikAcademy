@@ -1,0 +1,21 @@
+﻿@model IEnumerable<InformationalApplication.Models.Product>
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>All Products</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Product</th>
+        <th>Category</th>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.Name</td>
+            <td>@product.Category.Name</td>
+        </tr>
+    }
+</table>
+
+

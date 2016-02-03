@@ -1,0 +1,12 @@
+﻿@model IEnumerable<InformationalApplication.Models.Category>
+
+<div class="col-sm-10">
+    <select name="CategoryId" class="form-control" id="Categories">
+        @foreach (var category in Model)
+            {
+            <option value="@category.Id">@category.Name</option>
+        }
+    </select>
+</div>
+
+
