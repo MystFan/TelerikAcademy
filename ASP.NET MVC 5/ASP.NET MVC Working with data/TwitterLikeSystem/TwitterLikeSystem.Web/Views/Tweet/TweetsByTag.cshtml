@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TwitterLikeSystem.Web.ViewModels.Tweets.TweetViewModel>
+
+@{
+    ViewBag.Title = "TweetsByTag";
+}
+
+<h2>Tweets By Tag</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@DateTime.Now
+@foreach (var item in Model)
+{
+
+    <div>
+        <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+        <p>create by <strong>@Html.DisplayFor(modelItem => item.Creator)</strong> on @Html.DisplayFor(modelItem => item.DateCreate)</p>
+        <p>@Html.DisplayFor(modelItem => item.Content)</p>
+        <p>
+            @foreach (var tag in item.Tags)
+            {
+                <a href="/Tweet/TweetsByTag?tag=@tag.Substring(1)">@tag</a>
+            }
+        </p>
+    </div>
+    <hr />
+}
+

@@ -1,0 +1,109 @@
+﻿@model MoviesSystem.Models.EditMovieModel
+
+@using (Ajax.BeginForm("Update", "Movies", new AjaxOptions
+{
+    HttpMethod = "POST",
+    OnComplete = "successEditMovie",
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "container"
+}))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Edit Movie</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id);
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", value = Model.Title } })
+                @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Year, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "form-control", value = Model.Year } })
+                @Html.ValidationMessageFor(model => model.Year, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Director.Name, labelText: "Director Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Director.Name, new { htmlAttributes = new { @class = "form-control", value = Model.Director.Name } })
+                @Html.ValidationMessageFor(model => model.Director.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Director.Age, labelText: "Director Age", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Director.Age, new { htmlAttributes = new { @class = "form-control", value = Model.Director.Age } })
+                @Html.ValidationMessageFor(model => model.Director.Age, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LeadingMaleRole.Name, labelText: "Leading Male Role Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LeadingMaleRole.Name, new { htmlAttributes = new { @class = "form-control", value = Model.LeadingMaleRole.Name } })
+                @Html.ValidationMessageFor(model => model.LeadingMaleRole.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LeadingMaleRole.Age, labelText: "Leading Male Role Age", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LeadingMaleRole.Age, new { htmlAttributes = new { @class = "form-control", value = Model.LeadingMaleRole.Age } })
+                @Html.ValidationMessageFor(model => model.LeadingMaleRole.Age, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LeadingFemaleRole.Name, labelText: "Leading Female Role Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LeadingFemaleRole.Name, new { htmlAttributes = new { @class = "form-control", value = Model.LeadingFemaleRole.Name } })
+                @Html.ValidationMessageFor(model => model.LeadingFemaleRole.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LeadingFemaleRole.Age, labelText: "Leading Female Role Age", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LeadingFemaleRole.Age, new { htmlAttributes = new { @class = "form-control", value = Model.LeadingFemaleRole.Age } })
+                @Html.ValidationMessageFor(model => model.LeadingFemaleRole.Age, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Studio.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Studio.Name, new { htmlAttributes = new { @class = "form-control", value = Model.Studio.Name } })
+                @Html.ValidationMessageFor(model => model.Studio.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Studio.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Studio.Address, new { htmlAttributes = new { @class = "form-control", value = Model.Studio.Address } })
+                @Html.ValidationMessageFor(model => model.Studio.Address, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Edit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

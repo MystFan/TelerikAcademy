@@ -1,0 +1,27 @@
+﻿@model MoviesSystem.ViewModels.MovieViewModel
+
+<tr>
+    <td>
+        @Model.Title
+    </td>
+    <td>
+        @Model.Year
+    </td>
+    <td>
+        @Model.Director
+    </td>
+    <td>
+        @Model.LeadingMaleRole
+    </td>
+    <td>
+        @Model.LeadingFemaleRole
+    </td>
+    <td>
+        @Model.Studio
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+    </td>
+</tr>

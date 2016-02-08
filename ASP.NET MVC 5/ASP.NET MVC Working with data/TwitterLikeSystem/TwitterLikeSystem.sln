@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterLikeSystem.Web", "TwitterLikeSystem.Web\TwitterLikeSystem.Web.csproj", "{FA6FD761-C27F-4878-B248-7195D424C11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterLikeSystem.Models", "TwitterLikeSystem.Models\TwitterLikeSystem.Models.csproj", "{762401B9-DE30-4776-B9B5-F54B075281FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterLikeSystem.Data", "TwitterLikeSystem.Data\TwitterLikeSystem.Data.csproj", "{0E55471D-84F4-4379-A434-2AAAB4F6295A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterLikeSystem.Common", "TwitterLikeSystem.Common\TwitterLikeSystem.Common.csproj", "{3466359C-F843-4DFB-BD5D-86A311A7E9CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterLikeSystem.Services", "TwitterLikeSystem.Services\TwitterLikeSystem.Services.csproj", "{A0CEC78F-1AB3-4926-9331-C37239331815}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA6FD761-C27F-4878-B248-7195D424C11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6FD761-C27F-4878-B248-7195D424C11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6FD761-C27F-4878-B248-7195D424C11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6FD761-C27F-4878-B248-7195D424C11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762401B9-DE30-4776-B9B5-F54B075281FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762401B9-DE30-4776-B9B5-F54B075281FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762401B9-DE30-4776-B9B5-F54B075281FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762401B9-DE30-4776-B9B5-F54B075281FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E55471D-84F4-4379-A434-2AAAB4F6295A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E55471D-84F4-4379-A434-2AAAB4F6295A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E55471D-84F4-4379-A434-2AAAB4F6295A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E55471D-84F4-4379-A434-2AAAB4F6295A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3466359C-F843-4DFB-BD5D-86A311A7E9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3466359C-F843-4DFB-BD5D-86A311A7E9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3466359C-F843-4DFB-BD5D-86A311A7E9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3466359C-F843-4DFB-BD5D-86A311A7E9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CEC78F-1AB3-4926-9331-C37239331815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CEC78F-1AB3-4926-9331-C37239331815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CEC78F-1AB3-4926-9331-C37239331815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CEC78F-1AB3-4926-9331-C37239331815}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

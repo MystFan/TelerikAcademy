@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MoviesSystem.ViewModels.MovieHomePageViewModel>
+
+<div class="col-md-6">
+    @foreach (var movie in Model)
+    {
+        <div>
+            <h4>@movie.Title</h4>
+            <p>(@movie.Year)</p>
+            <p>Director: @movie.Director</p>
+        </div>
+    }
+</div>

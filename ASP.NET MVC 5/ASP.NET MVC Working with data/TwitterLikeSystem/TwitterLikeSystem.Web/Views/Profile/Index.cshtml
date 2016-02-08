@@ -1,0 +1,29 @@
+﻿@model TwitterLikeSystem.Web.ViewModels.Profile.ProfileViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h4>@this.User.Identity.Name</h4>
+
+    <p>E-mail: @Model.User.Email</p>
+
+    <hr />
+    @Html.ActionLink("Create Tweet", "Create", "Tweet", null, new { @class = "btn btn-primary"})
+</div>
+
+@foreach (var item in Model.UserTweets)
+{
+    <div>
+        <h3>@item.Title</h3>
+        <p>@item.Content</p>
+        <p>
+            @foreach (var tag in item.Tags)
+            {
+                <a href="/Tweet/TweetsByTag?tag=@tag.Substring(1)">@tag</a>
+            }
+        </p>
+    </div>
+    <hr />
+}

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MoviesSystem.ViewModels.MovieHomePageViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+
+</div>
+
+<div class="row" id="last-3-movies-container">
+    <div class="col-md-6">
+        @foreach (var movie in Model)
+        {
+            <div>
+                <h4>@movie.Title</h4>
+                <p>(@movie.Year)</p>
+                <p>Director: @movie.Director</p>
+            </div>
+        }
+    </div>
+</div>
+<div>
+    @Ajax.ActionLink("Show", "GetLastMovies", null, new AjaxOptions
+           {
+               HttpMethod = "GET",
+               InsertionMode = InsertionMode.Replace,
+               UpdateTargetId = "last-3-movies-container",
+           }, new { @class = "btn btn-success", id = "btn-movies-show" })
+
+    @Ajax.ActionLink("Hide", "Index", null, new AjaxOptions
+            {
+                HttpMethod = "GET",
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "last-3-movies-container",
+            }, new { @class = "btn btn-success", id = "btn-movies-hide" })
+</div>
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            var $showButton = $('#btn-movies-show');
+            var $hideButton = $('#btn-movies-hide');
+
+            $hideButton.hide();
+
+            $showButton.on('click', function () {
+                $showButton.hide();
+                $hideButton.show();
+            });
+
+            $hideButton.on('click', function () {
+                $hideButton.hide();
+                $showButton.show();
+            });
+        })
+    </script>
+}

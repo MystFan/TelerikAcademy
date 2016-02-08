@@ -1,0 +1,142 @@
+﻿@model IEnumerable<MoviesSystem.ViewModels.MovieViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Ajax.ActionLink("Create New", "Create", null, new AjaxOptions
+{
+    HttpMethod = "GET",
+    UpdateTargetId = "container",
+    InsertionMode = InsertionMode.Replace,
+    LoadingElementId = "img-loading"
+}, new { @class = "btn btn-succes" })
+</p>
+<div id="all-movies">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Director)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeadingMaleRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeadingFemaleRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Studio)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var movie in Model)
+        {
+            <tr data-id="@movie.Id">
+                <td>
+                    @Html.DisplayFor(model => movie.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => movie.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => movie.Director)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => movie.LeadingMaleRole)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => movie.LeadingFemaleRole)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => movie.Studio)
+                </td>
+                <td>
+                    @Ajax.ActionLink("Edit", "Update", new { id = movie.Id }, new AjaxOptions
+               {
+                   HttpMethod = "GET",
+                   UpdateTargetId = "container",
+                   InsertionMode = InsertionMode.Replace,
+                   LoadingElementId = "img-loading"
+               }) |
+
+                    @Ajax.ActionLink("Details", "Details", new { id = movie.Id }, new AjaxOptions
+               {
+                   HttpMethod = "GET",
+                   UpdateTargetId = "container",
+                   InsertionMode = InsertionMode.Replace,
+                   LoadingElementId = "img-loading"
+               }) |
+
+                    @Ajax.ActionLink("Delete", "Delete", new { id = movie.Id }, new AjaxOptions
+               {
+                   HttpMethod = "POST",
+                   OnComplete = "successDeleteMovie"
+               })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+<div class="row">
+    <img src="~/Content/Images/loading.gif" alt="loading" id="img-loading" style="display: none" />
+    <div class="col-md-12" id="container">
+
+    </div>
+</div>
+
+
+@section scripts{
+
+    <script>
+        function successCreateMovie(result) {
+            $("table").append(result.responseText);
+            $("#container").empty();
+        };
+
+        function successDeleteMovie(result) {
+            var id = JSON.parse(result.responseText).Id;
+            $('*[data-id="' + id + '"]').remove();
+        };
+
+        function successEditMovie(result) {
+            try {
+                var movie = JSON.parse(result.responseText);
+                var $rowToUpdate = $('*[data-id="' + movie.id + '"]');
+                var $lastTd = $rowToUpdate.find('td:last');
+
+                var $row = $('<tr>');
+                var $title = $('<td>').text(movie.title);
+                $row.append($title);
+                var $year = $('<td>').text(movie.year);
+                $row.append($year);
+                var $director = $('<td>').text(movie.director);
+                $row.append($director);
+                var $maleRole = $('<td>').text(movie.maleRole);
+                $row.append($maleRole);
+                var $fimaleRole = $('<td>').text(movie.fimaleRole);
+                $row.append($fimaleRole);
+                var $studio = $('<td>').text(movie.studio);
+                $row.append($studio);
+                $row.append($lastTd);
+
+                $rowToUpdate.replaceWith($row);
+
+                $("#container").empty();
+            } catch (e) {
+
+            }
+        };
+    </script>
+}
