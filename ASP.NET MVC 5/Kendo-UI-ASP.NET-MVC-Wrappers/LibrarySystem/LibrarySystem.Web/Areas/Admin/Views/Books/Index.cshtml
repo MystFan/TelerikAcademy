@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Admin</h2>
+
+@(Html.Kendo()
+     .Grid<LibrarySystem.Web.Areas.Admin.Models.BookAdminViewModel>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(c => c.Id).Width(20);
+        columns.Bound(c => c.ISBN).Width(100);
+        columns.Bound(c => c.Title);
+        columns.Bound(c => c.Content).Width(300);
+        columns.Bound(c => c.DateCreate).Width(120);
+        columns.Bound(c => c.Category).Width(100);
+        columns.Bound(c => c.Author);
+
+        columns.Command(command => { command.Edit(); command.Destroy(); }).Width(100);
+    })
+    .ToolBar(toolBar =>
+    {
+        toolBar.Save();
+    })
+    .Editable(editable => editable.Mode(GridEditMode.InCell))
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .HtmlAttributes(new { style = "height:550px;" })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Model(model =>
+        {
+            model.Id(b => b.Id);
+            model.Field(b => b.Id).Editable(false);
+            model.Field(b => b.Id).Editable(false);
+            model.Field(b => b.Category).Editable(false);
+            model.Field(b => b.Author).Editable(false);
+        })
+        .PageSize(3)
+        .Read(read => read.Action("AjaxIndex", "Books"))
+        .Create(create => create.Action("Create", "Books"))
+        .Update(update => update.Action("Edit", "Books"))
+        .Destroy(destroy => destroy.Action("Delete", "Books"))
+    )
+)
+
+

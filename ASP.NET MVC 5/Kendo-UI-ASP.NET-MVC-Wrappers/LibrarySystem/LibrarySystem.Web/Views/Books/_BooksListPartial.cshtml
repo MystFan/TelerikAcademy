@@ -1,0 +1,14 @@
+﻿@model IEnumerable<LibrarySystem.Web.Models.Books.BookViewModel>
+
+@foreach (var book in Model)
+{
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>@book.Title</h3>
+            <p>@book.Author</p>
+            <p>@book.ShortReview</p>
+            <p>added by <strong> @book.CreatorName</strong></p>
+        </div>
+    </div>
+    <hr />
+}

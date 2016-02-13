@@ -1,0 +1,44 @@
+﻿@model IEnumerable<LibrarySystem.Web.Models.Books.BookViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Library System</h1>
+</div>
+
+<div class="row">
+    <div class="demo-section k-content">
+        @(Html.Kendo().TreeView()
+        .Name("treeview")
+        .Items(treeview =>
+        {
+            treeview.Add().Text("Last 3 upload Books!")
+                .Items(root =>
+                {
+                    foreach (var book in (IEnumerable<LibrarySystem.Web.Models.Books.BookViewModel>)Model)
+                    {
+                        root.Add().Text(book.Title).HtmlAttributes(new { @class = "lead" });
+                        root.Add().Text(book.ShortReview);
+                        root.Add().Text(book.ISBN);
+                        root.Add().Text(book.DateCreate.ToString());
+
+                        root.Add().Text("User").Items(user =>
+                                                {
+                                                    user.Add().Text(book.CreatorName);
+                                                    user.Add().Text(book.CreatorEmail);
+                                                });
+
+                        foreach (var item in book.AuthorBooks)
+                        {
+                            root.Add().Text(book.Author)
+                                        .Items(title =>
+                                           title.Add().Text(item)
+                                        );
+                        }
+                    }
+                });
+        })
+        )
+    </div>
+</div>

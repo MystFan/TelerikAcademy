@@ -1,0 +1,16 @@
+﻿@model IEnumerable<LibrarySystem.Web.Models.Categories.CategoryViewModel>
+@{
+    ViewBag.Title = "All";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Categories</h2>
+@(Html.Kendo()
+    .DropDownList()
+    .Name("categories")
+    .Value("Select category")
+    .DataTextField("Name")
+    .DataValueField("Id")
+    .BindTo(Model)
+    )
+

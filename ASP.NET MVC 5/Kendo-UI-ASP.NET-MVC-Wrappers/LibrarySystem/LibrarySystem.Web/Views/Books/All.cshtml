@@ -1,0 +1,67 @@
+﻿@model IEnumerable<LibrarySystem.Web.Models.Books.BookViewModel>
+@{
+    ViewBag.Title = "All";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var pageSize = 3;
+    var booksCount = (int)ViewData["BooksCount"];
+}
+
+<div class="container">
+    <br />
+    <div class="row">
+        @using (Ajax.BeginForm("GetByTitle", "Books", new AjaxOptions
+        {
+            HttpMethod = "POST",
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "container",
+        }))
+        {
+            @Html.AntiForgeryToken()
+
+
+            <div class="col-md-8 col-md-offset-2">
+                <label>Search books:</label>
+
+                @(Html
+                    .Kendo()
+                    .AutoComplete()
+                    .Name("title")
+                    .Value("")
+                    .Filter(FilterType.Contains)
+                    .MinLength(2)
+                    .BindTo(Model.Select(m => m.Title)
+                    )
+                )
+
+                <br />
+                <br />
+                <div>
+                    <input type="submit" value="Search" class="form-control btn btn-primary" />
+                </div>
+            </div>
+        }
+    </div>
+
+    <div id="container">
+
+        @Html.Partial("_BooksListPartial", Model);
+    </div>
+</div>
+
+<div class="text-center">
+    @if (booksCount % pageSize == 0)
+    {
+        for (int i = 0; i < booksCount / pageSize; i++)
+        {
+            <a href="@Url.Action("All", "Books", new { page = i.ToString(), pageSize = pageSize.ToString() })" class="btn btn-primary">@i</a>
+        }
+    }
+    else if (booksCount % pageSize != 0)
+    {
+        for (int i = 0; i < booksCount / pageSize + 1; i++)
+        {
+            <a href="@Url.Action("All", "Books", new { page = i.ToString(), pageSize = pageSize.ToString() })" class="btn btn-primary">@i</a>
+        }
+    }
+</div>
+
