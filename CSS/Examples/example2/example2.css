@@ -1,0 +1,146 @@
+﻿body,
+header,
+section,
+footer,
+a,
+div,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 800px;
+  height: 560px;
+  border: 1px solid #fff;
+  background-color: #000;
+}
+body > header {
+  margin-left: 75px;
+}
+body > header h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+body > header h1 a {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #fff;
+}
+body > section {
+  margin-left: 75px;
+}
+body > section header {
+  font-size: 12px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000;
+  float: left;
+  margin-top: 5px;
+  color: #fff;
+}
+body > section header h2 {
+  font-size: 1.9em;
+}
+body > section header p a {
+  color: #6097CD;
+  text-decoration: none;
+}
+body > section div#articles a {
+  padding: 13px 5px;
+  display: block;
+  width: 119px;
+  height: 96px;
+  border: 1px solid #000;
+  float: left;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  text-align: justify;
+}
+body > section div.color1 {
+  zoom: 1;
+}
+body > section div.color1:before {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+}
+body > section div.color1,
+body > section div.color2 {
+  width: 123px;
+  height: 119px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #C75000;
+  text-align: center;
+}
+body > section div.color1 a,
+body > section div.color2 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+  position: relative;
+  top: 85px;
+}
+body > section div.color4 {
+  display: block;
+  width: 132px;
+  height: 119px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #A5C700;
+  text-align: center;
+}
+body > section div.color4 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+  position: relative;
+  top: 85px;
+}
+body > section div.color3 {
+  display: block;
+  width: 268px;
+  height: 119px;
+  float: left;
+  background-color: #00AFCE;
+  margin-top: 5px;
+  margin-left: 5px;
+  text-align: center;
+}
+body > section div.color3 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+  position: relative;
+  top: 85px;
+}
+body > section div.color1 {
+  background-color: #D0B601;
+  margin-left: 0;
+}
+body > footer {
+  zoom: 1;
+  color: #fff;
+  display: inline-block;
+  margin-left: 355px;
+  font-size: 12px;
+}
+body > footer:before {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+}
+body > footer a {
+  text-decoration: none;
+  color: #6097CD;
+}
+/*# sourceMappingURL=example2.css.map */

@@ -1,0 +1,73 @@
+﻿body,
+div,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+body div#cssmenu {
+  width: 960px;
+  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  font-size: 14px;
+  margin: 20px 7px;
+}
+body div#cssmenu > ul {
+  list-style-type: none;
+  background-color: #CFCFCF;
+  border-bottom: 5px solid #0079B2;
+}
+body div#cssmenu > ul li.active {
+  height: 20px;
+  background-color: #0079b2;
+  margin-top: -18px;
+}
+body div#cssmenu > ul li.active > a {
+  color: #fff;
+}
+body div#cssmenu > ul li.active > a:hover {
+  background-color: #0079b2;
+}
+body div#cssmenu > ul > li {
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  padding: 10px 5px;
+  text-align: center;
+  position: relative;
+}
+body div#cssmenu > ul > li a {
+  text-decoration: none;
+  color: #5D6E66;
+  font-weight: bold;
+}
+body div#cssmenu > ul > li ul {
+  display: none;
+}
+body div#cssmenu > ul > li:hover > a {
+  height: 35px;
+  color: #fff;
+}
+body div#cssmenu > ul > li:hover ul {
+  background-color: #E0E0E0;
+  display: block;
+  position: absolute;
+  list-style-type: none;
+  border: 2px solid #0079B2;
+  border-top: 5px solid #0079B2;
+  width: 200px;
+  text-align: left;
+  top: 40px;
+  left: 0;
+}
+body div#cssmenu > ul > li:hover ul li {
+  display: block;
+  padding: 10px;
+}
+body div#cssmenu > ul > li:hover ul li:hover {
+  background-color: #949494;
+}
+body div#cssmenu > ul > li:hover ul li:hover a {
+  color: #fff;
+}
+/*# sourceMappingURL=example5.css.map */
